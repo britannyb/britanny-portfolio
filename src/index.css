@@ -112,7 +112,7 @@
   height: 60px;
   width: 60px;
   margin: 0 auto;
-  background: url("images/icons/light-mode.png") no-repeat center center;
+  background: url("/images/icons/light-mode.png") no-repeat center center;
   background-size: 100% 100%;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
