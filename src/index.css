@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Pangolin", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  overflow-x: hidden;
+}
+
+.navigation ul li:hover {
+  cursor: pointer;
+}
+
+.navigation {
+  background: url("images/notebookBg.jpg") no-repeat top right;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.home-icon,
+.skills-icon,
+.projects-icon,
+.me-icon {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  transform: rotate(-12deg);
+  transition: all ease-in-out 0.2s;
+}
+
+.home-icon {
+  transform: rotate(-12deg);
+}
+
+.navigation-content li a:hover .home-icon,
+.home-icon:hover,
+.active .home-icon {
+  background: url("images/icons/home-active.png") no-repeat center center;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+}
+
+.skills-icon {
+  transform: rotate(16deg);
+}
+
+.navigation-content li a:hover .skills-icon,
+.skills-icon:hover,
+.active .skills-icon {
+  background: url("images/icons/skills-active.png") no-repeat center center;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+}
+
+.projects-icon {
+  transform: rotate(-14deg);
+}
+
+.navigation-content li a:hover .projects-icon,
+.projects-icon:hover,
+.active .projects-icon {
+  background: url("images/icons/projects-active.png") no-repeat center center;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+}
+
+.me-icon {
+  transform: rotate(-14deg);
+}
+
+.navigation-content li a:hover .me-icon,
+.me-icon:hover,
+.active .me-icon {
+  background: url("images/icons/me-active.png") no-repeat center center;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+}
+
+#toggle-button button {
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+#light-toggle {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  background: url("images/icons/dark-mode.png") no-repeat center center;
+  background-size: 100% 100%;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+#dark-toggle {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  background: url("images/icons/light-mode.png") no-repeat center center;
+  background-size: 100% 100%;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.container-title {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+}
+
+.container-body {
+  width: 100%;
+  padding: 20px;
+}
+
+#welcome {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/homeTopBg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.content {
+  max-width: 1800px;
+  margin: auto;
+  padding: 80px 14px;
+}
+
+.centered-image {
+  margin: 0 auto;
+}
+
+#girl {
+  position: relative;
+}
+
+#girl img {
+  width: 82%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#girl-boxes {
+  margin-top: -148px;
+  max-width: 600px;
+}
+
+#name {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+#skills {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/skillsBg.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
+.pink-title::before {
+  content: " ";
+  display: inline-block;
+  border: 4px solid #ff7dac;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#projects {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/projectsBg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#about {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/aboutBg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.pic-container {
+  position: relative;
+  max-width: 600px;
+  margin: 15px;
+}
+
+.pic-container img {
+  position: relative;
+  border-radius: 25px;
+  z-index: 2;
+}
+
+.picture-shadow {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: #b96b85;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.picture-frame {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  border: 6px solid #048399;
+  border-radius: 25px;
+  z-index: 3;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h4 {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
