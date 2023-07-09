@@ -26,7 +26,7 @@
 }
 
 .navigation {
-  background: url("images/notebookBg.jpg") no-repeat top right;
+  background: url("/images/notebookBg.jpg") no-repeat top right;
   background-size: 100% 100%;
   text-align: center;
 }
@@ -50,7 +50,7 @@
 .navigation-content li a:hover .home-icon,
 .home-icon:hover,
 .active .home-icon {
-  background: url("images/icons/home-active.png") no-repeat center center;
+  background: url("/images/icons/home-active.png") no-repeat center center;
   background-size: 100% 100%;
   transform: rotate(0deg);
 }
@@ -62,7 +62,7 @@
 .navigation-content li a:hover .skills-icon,
 .skills-icon:hover,
 .active .skills-icon {
-  background: url("images/icons/skills-active.png") no-repeat center center;
+  background: url("/images/icons/skills-active.png") no-repeat center center;
   background-size: 100% 100%;
   transform: rotate(0deg);
 }
@@ -74,7 +74,7 @@
 .navigation-content li a:hover .projects-icon,
 .projects-icon:hover,
 .active .projects-icon {
-  background: url("images/icons/projects-active.png") no-repeat center center;
+  background: url("/images/icons/projects-active.png") no-repeat center center;
   background-size: 100% 100%;
   transform: rotate(0deg);
 }
@@ -86,7 +86,7 @@
 .navigation-content li a:hover .me-icon,
 .me-icon:hover,
 .active .me-icon {
-  background: url("images/icons/me-active.png") no-repeat center center;
+  background: url("/images/icons/me-active.png") no-repeat center center;
   background-size: 100% 100%;
   transform: rotate(0deg);
 }
@@ -130,7 +130,7 @@
 
 #welcome {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("images/homeTopBg.jpg") no-repeat center center;
+    url("/images/homeTopBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -170,7 +170,7 @@
 
 #skills {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("images/skillsBg.jpg") no-repeat bottom center;
+    url("/images/skillsBg.jpg") no-repeat bottom center;
   background-size: cover;
 }
 
@@ -187,13 +187,13 @@
 
 #projects {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("images/projectsBg.jpg") no-repeat center center;
+    url("/images/projectsBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #about {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("images/aboutBg.jpg") no-repeat center center;
+    url("/images/aboutBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
