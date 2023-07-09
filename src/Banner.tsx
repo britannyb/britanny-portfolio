@@ -19,10 +19,12 @@ const Banner = () => {
         </div>
         <div className="flex-1 relative text-center md:text-left">
           <div className="md:absolute md:bottom-8 xl:right-0">
-            <p className="text-lg md:text-2xl leading-3">creativity + logic</p>
+            <p className="text-white text-lg md:text-2xl leading-3">
+              creativity + logic
+            </p>
             <p
               id="name"
-              className="text-2xl animate-glow md:text-3xl xl:text-4xl"
+              className="text-white text-2xl animate-glow md:text-3xl xl:text-4xl"
             >
               Britanny
             </p>
