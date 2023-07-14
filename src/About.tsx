@@ -96,34 +96,6 @@ const About = () => {
                       britanny b.
                     </a>
                   </div>
-                  <div className="flex space-x-2">
-                    <a
-                      href="https://www.instagram.com/bunnyrabbrit/"
-                      target="_blank"
-                    >
-                      <img
-                        src="images/instagramLogo.png"
-                        alt="Instagram Icon"
-                        height="40"
-                        width="40"
-                        className="hover:scale-125"
-                      />
-                    </a>
-                    <a
-                      className="text-black dark:text-white hover:text-teal dark:hover:text-pink flex items-center"
-                      href="https://www.youtube.com/@bunnyrabbrit"
-                      target="_blank"
-                    >
-                      <img
-                        src="images/youtubeLogo.png"
-                        alt="Youtube Icon"
-                        height="40"
-                        width="40"
-                        className="mr-2 hover:scale-125"
-                      />
-                      bunnyrabbrit
-                    </a>
-                  </div>
                 </div>
               </AboutContainer>
             </div>

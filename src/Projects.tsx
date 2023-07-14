@@ -243,22 +243,6 @@ const Projects = () => {
                   alt="Miku Nakano Fan Art"
                 />
               </div>
-              <div className="w-36 md:ml-auto">
-                <a
-                  className="text-black dark:text-white hover:text-teal dark:hover:text-pink flex items-center pt-4 align-right"
-                  href="https://www.instagram.com/brytebunny/"
-                  target="_blank"
-                >
-                  <img
-                    src="images/instagramLogo.png"
-                    alt="Instagram Icon"
-                    height="40"
-                    width="40"
-                    className="mx-2 hover:scale-125"
-                  />{" "}
-                  brytebunny
-                </a>
-              </div>
             </ContainerContent>
             <br />
             <ContainerContent title="Debut Invitations">
