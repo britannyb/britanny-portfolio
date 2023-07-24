@@ -159,7 +159,9 @@ const Skills = () => {
           id="girl-boxes"
           className="main-img animate-float"
           src="images/beatSaberGirl.PNG"
-          alt="A girl playing beat saber"
+          alt="A girl playing Beat Saber"
+          height="870"
+          width="900"
         />
       </div>
     </div>

@@ -38,7 +38,12 @@ const About = () => {
             <div className="pic-container">
               <div className="picture-shadow"></div>
               <div className="picture-frame"></div>
-              <img src="images/meDesk.jpg" alt="A picture of me" />
+              <img
+                src="images/meDesk.jpg"
+                alt="A picture of me"
+                height="720"
+                width="576"
+              />
             </div>
             <div className="pt-6 md:pt-0">
               <a

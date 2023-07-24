@@ -10,11 +10,15 @@ const Banner = () => {
             className="main-img animate-float"
             src="images/purpleGirl.PNG"
             alt="A girl with purple hair holding a skate board"
+            height="700"
+            width="600"
           />
           <img
             className="main-img absolute top-0 right-0 animate-wiggle"
             src="images/drawingPen.png"
             alt="A drawing tablet stylus"
+            height="704"
+            width="597"
           />
         </div>
         <div className="flex-1 relative text-center md:text-left">

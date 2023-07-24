@@ -109,6 +109,8 @@ const Projects = () => {
                 <img
                   src="images/projects/portfolio1Prototype.png"
                   alt="Portfolio v1 prototype design image"
+                  height="1374"
+                  width="1770"
                 />
               </ContainerContent>
             </AppDesignContainer>
@@ -124,6 +126,8 @@ const Projects = () => {
                 <img
                   src="images/projects/vaccineHelpPrototype.png"
                   alt="VaccineHelp prototype design image"
+                  height="566"
+                  width="1600"
                 />
               </ContainerContent>
             </AppDesignContainer>
@@ -139,6 +143,8 @@ const Projects = () => {
                 <img
                   src="images/projects/helpCarePrototype.png"
                   alt="HelpCare prototype design image"
+                  height="1271"
+                  width="1770"
                 />
               </ContainerContent>
               <br />
@@ -147,6 +153,8 @@ const Projects = () => {
                   className="centered-image"
                   src="images/projects/helpCareLogoDrafts.png"
                   alt="HelpCare logo drafts"
+                  height="567"
+                  width="806"
                 />
               </ContainerContent>
             </AppDesignContainer>
@@ -162,6 +170,8 @@ const Projects = () => {
                 <img
                   src="images/projects/motivEatMobilePrototype.png"
                   alt="MotivEat prototype design image"
+                  height="1297"
+                  width="1770"
                 />
               </ContainerContent>
               <br />
@@ -172,6 +182,8 @@ const Projects = () => {
                       className="centered-image"
                       src="images/projects/motivEatLogoDrafts.png"
                       alt="MotivEat logo drafts"
+                      height="711"
+                      width="838"
                     />
                   </ContainerContent>
                 </div>
@@ -181,6 +193,8 @@ const Projects = () => {
                       className="centered-image"
                       src="images/projects/motivEatPoster2.png"
                       alt="Survey Post"
+                      height="690"
+                      width="552"
                     />
                   </ContainerContent>
                 </div>
@@ -203,6 +217,8 @@ const Projects = () => {
                     <img
                       src="images/designs/fuwaNekoPoster.jpg"
                       alt="Fuwa Neko poster default design"
+                      height="809"
+                      width="572"
                     />
                   </div>
                   <div
@@ -213,11 +229,15 @@ const Projects = () => {
                       className="centered-image max-h-96"
                       src="images/designs/fuwaNekoPaint.jpg"
                       alt="Fuwa Neko poster illustrated design"
+                      height="800"
+                      width="566"
                     />
                     <img
                       className="centered-image max-h-96"
                       src="images/designs/fuwaNekoBlue.jpg"
                       alt="Fuwa Neko poster dark blue design"
+                      height="800"
+                      width="566"
                     />
                   </div>
                 </div>
@@ -226,21 +246,51 @@ const Projects = () => {
           </ProjectContainer>
           <ProjectContainer projectTitle="Art+Designs">
             <ContainerContent title="Drawings">
-              <div className="grid grid-cols-3 gap-2 items-center centered-image">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center centered-image">
                 <img
                   className="centered-image"
                   src="images/drawing1.jpg"
                   alt="Nezuko Fan Art"
+                  height="900"
+                  width="600"
                 />
                 <img
                   className="centered-image"
                   src="images/drawing2.jpg"
                   alt="Zero Two Fan Art"
+                  height="900"
+                  width="600"
                 />
                 <img
                   className="centered-image"
                   src="images/drawing3.jpg"
                   alt="Miku Nakano Fan Art"
+                  height="900"
+                  width="600"
+                />
+              </div>
+              <br />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center centered-image">
+                <img
+                  className="centered-image"
+                  src="images/drawing4.jpg"
+                  alt="You Fan Art"
+                  height="900"
+                  width="690"
+                />
+                <img
+                  className="centered-image"
+                  src="images/drawing5.jpg"
+                  alt="Spy X Family Fan Art"
+                  height="900"
+                  width="690"
+                />
+                <img
+                  className="centered-image"
+                  src="images/drawing6.jpg"
+                  alt="Barbie Fan Art"
+                  height="900"
+                  width="690"
                 />
               </div>
             </ContainerContent>
@@ -250,18 +300,26 @@ const Projects = () => {
                 <img
                   src="images/designs/goldInv.jpg"
                   alt="Gold debut invitation image"
+                  height="699"
+                  width="496"
                 />
                 <img
                   src="images/designs/goldInv2.jpg"
                   alt="Gold debut invitation image page 2"
+                  height="699"
+                  width="496"
                 />
                 <img
                   src="images/designs/modernInv.jpg"
                   alt="Modern debut invitation image"
+                  height="699"
+                  width="496"
                 />
                 <img
                   src="images/designs/modernInv2.jpg"
                   alt="Modern debut invitation image page 2"
+                  height="699"
+                  width="496"
                 />
               </div>
             </ContainerContent>
@@ -275,16 +333,22 @@ const Projects = () => {
                   <img
                     src="images/logoPink.png"
                     alt="Britanny Portfolio Logo"
+                    height="140"
+                    width="102"
                   />
                   <img
                     src="images/logoYellow.png"
                     alt="Britanny Portfolio Logo"
+                    height="140"
+                    width="102"
                   />
                 </div>
                 <div>
                   <img
                     src="images/designs/linkedInBanner.jpg"
                     alt="LinkedIn banner design image"
+                    height="278"
+                    width="1109"
                   />
                 </div>
               </div>

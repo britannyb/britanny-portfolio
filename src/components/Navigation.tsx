@@ -36,11 +36,15 @@ const Navigation = () => {
             src="images/logoPink.png"
             alt="Britanny Portfolio Website Logo"
             className="w-12 inline dark:hidden"
+            height="140"
+            width="102"
           />
           <img
             src="images/logoYellow.png"
             alt="Britanny Portfolio Website Logo"
             className="w-12 hidden dark:inline"
+            height="140"
+            width="102"
           />
         </div>
         <div>
