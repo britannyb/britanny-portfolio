@@ -222,7 +222,7 @@ const Projects = () => {
                     />
                   </div>
                   <div
-                    className="grid grid-cols-2 lg:grid-cols-1 gap-2 centered-image pt-2"
+                    className="grid grid-cols-2 lg:grid-cols-1 gap-2 centered-image pt-2 lg:pt-0"
                     style={{ maxWidth: "580px" }}
                   >
                     <img
