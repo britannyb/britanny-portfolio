@@ -229,15 +229,11 @@ const Projects = () => {
                       className="centered-image max-h-96"
                       src="images/designs/fuwaNekoPaint.jpg"
                       alt="Fuwa Neko poster illustrated design"
-                      height="800"
-                      width="566"
                     />
                     <img
                       className="centered-image max-h-96"
                       src="images/designs/fuwaNekoBlue.jpg"
                       alt="Fuwa Neko poster dark blue design"
-                      height="800"
-                      width="566"
                     />
                   </div>
                 </div>
