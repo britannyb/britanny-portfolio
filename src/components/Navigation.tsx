@@ -94,11 +94,12 @@ const Navigation = () => {
       </div>
       <div id="toggle-button" className="absolute right-4 top-0 py-3">
         <button id="theme-toggle" type="button" onClick={toggleTheme}>
-          {themeToggle ? (
+          <div className="inline dark:hidden">
             <div id="dark-toggle"></div>
-          ) : (
+          </div>
+          <div className="hidden dark:inline">
             <div id="light-toggle"></div>
-          )}
+          </div>
         </button>
       </div>
     </div>
