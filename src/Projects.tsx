@@ -208,7 +208,7 @@ const Projects = () => {
               paletteColors={["12D4B4", "3A4067", "0C8C74", "515CA6"]}
               description="Logo and poster design for a friend's booth that sells Japanese desserts."
             >
-              <ContainerContent title="Poster Design Ideas (Made with Canva)">
+              <ContainerContent title="Poster Designs">
                 <div
                   className="grid grid-cols-1 lg:flex centered-image"
                   style={{ maxWidth: "860px" }}
@@ -244,21 +244,18 @@ const Projects = () => {
             <ContainerContent title="Drawings">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2">
                 <img
-                  className="centered-image"
                   src="images/drawing1.jpg"
                   alt="Nezuko Fan Art"
                   height="900"
                   width="600"
                 />
                 <img
-                  className="centered-image"
                   src="images/drawing2.jpg"
                   alt="Zero Two Fan Art"
                   height="900"
                   width="600"
                 />
                 <img
-                  className="centered-image"
                   src="images/drawing3.jpg"
                   alt="Miku Nakano Fan Art"
                   height="900"
@@ -267,21 +264,18 @@ const Projects = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image">
                 <img
-                  className="centered-image"
                   src="images/drawing4.jpg"
                   alt="You Fan Art"
                   height="900"
                   width="690"
                 />
                 <img
-                  className="centered-image"
                   src="images/drawing5.jpg"
                   alt="Spy X Family Fan Art"
                   height="900"
                   width="690"
                 />
                 <img
-                  className="centered-image"
                   src="images/drawing6.jpg"
                   alt="Barbie Fan Art"
                   height="900"
@@ -291,7 +285,7 @@ const Projects = () => {
             </ContainerContent>
             <br />
             <ContainerContent title="Toy Photography">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images">
                 <img
                   src="images/nendoroidRapunzel.jpg"
                   alt="Rapunzel nendoroid photography picture"
