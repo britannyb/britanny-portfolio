@@ -4,6 +4,7 @@ import HomeIcon from "./HomeIcon";
 import ProjectsIcon from "./ProjectsIcon";
 import SkillsIcon from "./SkillsIcon";
 import AboutIcon from "./AboutIcon";
+import LightBulbIcon from "./LightBulbIcon";
 
 const Navigation = () => {
   const [themeToggle, setThemeToggle] = useState(true);
@@ -92,13 +93,15 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-      <div id="toggle-button" className="absolute right-4 top-0 py-3">
+      <div
+        id="toggle-button"
+        className="absolute flex align-middle border border-teal dark:border-white border-2 rounded-full right-4 p-1"
+        style={{ top: "50%", transform: "translateY(-50%)" }}
+      >
         <button id="theme-toggle" type="button" onClick={toggleTheme}>
-          {themeToggle ? (
-            <div id="dark-toggle"></div>
-          ) : (
-            <div id="light-toggle"></div>
-          )}
+          <div className="flex align-middle light-icon">
+            <LightBulbIcon />
+          </div>
         </button>
       </div>
     </div>
