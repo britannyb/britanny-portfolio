@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-scroll";
 import HomeIcon from "./HomeIcon";
 import ProjectsIcon from "./ProjectsIcon";
