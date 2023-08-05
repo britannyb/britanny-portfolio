@@ -3,7 +3,6 @@ import HomeIcon from "./HomeIcon";
 import ProjectsIcon from "./ProjectsIcon";
 import SkillsIcon from "./SkillsIcon";
 import AboutIcon from "./AboutIcon";
-import LightBulbIcon from "./LightBulbIcon";
 
 const Navigation = () => {
   const toggleTheme = () => {
@@ -33,15 +32,11 @@ const Navigation = () => {
             src="images/logoPink.png"
             alt="Britanny Portfolio Website Logo"
             className="w-12 inline dark:hidden"
-            height="140"
-            width="102"
           />
           <img
             src="images/logoYellow.png"
             alt="Britanny Portfolio Website Logo"
             className="w-12 hidden dark:inline"
-            height="140"
-            width="102"
           />
         </div>
         <div>
@@ -89,14 +84,13 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-      <div
-        id="toggle-button"
-        className="absolute flex align-middle border border-teal dark:border-white border-2 rounded-full right-4 p-1"
-        style={{ top: "50%", transform: "translateY(-50%)" }}
-      >
+      <div id="toggle-button" className="absolute right-4 top-0 py-3">
         <button id="theme-toggle" type="button" onClick={toggleTheme}>
-          <div className="flex align-middle light-icon">
-            <LightBulbIcon />
+          <div className="inline dark:hidden">
+            <div id="dark-toggle"></div>
+          </div>
+          <div className="hidden dark:inline">
+            <div id="light-toggle"></div>
           </div>
         </button>
       </div>

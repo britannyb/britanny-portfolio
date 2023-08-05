@@ -91,18 +91,6 @@
   transform: rotate(0deg);
 }
 
-.light-icon {
-  transform: rotate(0deg);
-}
-
-.navigation-content li a:hover .light-icon,
-.light-icon:hover,
-.active .light-icon {
-  background: url("/images/icons/light-active.png") no-repeat center center;
-  background-size: 100% 100%;
-  transform: rotate(-16deg);
-}
-
 #toggle-button button {
   padding: 0;
   border: none;
