@@ -242,7 +242,7 @@ const Projects = () => {
           </ProjectContainer>
           <ProjectContainer projectTitle="Art+Designs">
             <ContainerContent title="Drawings">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center centered-image">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2">
                 <img
                   className="centered-image"
                   src="images/drawing1.jpg"
@@ -265,8 +265,7 @@ const Projects = () => {
                   width="600"
                 />
               </div>
-              <br />
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center centered-image">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image">
                 <img
                   className="centered-image"
                   src="images/drawing4.jpg"
@@ -287,6 +286,29 @@ const Projects = () => {
                   alt="Barbie Fan Art"
                   height="900"
                   width="690"
+                />
+              </div>
+            </ContainerContent>
+            <br />
+            <ContainerContent title="Toy Photography">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                <img
+                  src="images/nendoroidRapunzel.jpg"
+                  alt="Rapunzel nendoroid photography picture"
+                  height="900"
+                  width="674"
+                />
+                <img
+                  src="images/nendoroidMiku.jpg"
+                  alt="Miku Nakano nendoroid photography picture"
+                  height="900"
+                  width="674"
+                />
+                <img
+                  src="images/nendoroidKento.jpg"
+                  alt="Kento Nanami nendoroid photography picture"
+                  height="900"
+                  width="674"
                 />
               </div>
             </ContainerContent>
