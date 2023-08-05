@@ -6,17 +6,14 @@ import SkillsIcon from "./SkillsIcon";
 import AboutIcon from "./AboutIcon";
 
 const BottomNavigation = () => {
-  const [themeToggle, setThemeToggle] = useState(true);
   const toggleTheme = () => {
     if (localStorage.getItem("color-theme")) {
       if (localStorage.getItem("color-theme") === "light") {
         document.documentElement.classList.add("dark");
         localStorage.setItem("color-theme", "dark");
-        setThemeToggle(false);
       } else {
         document.documentElement.classList.remove("dark");
         localStorage.setItem("color-theme", "light");
-        setThemeToggle(true);
       }
     } else {
       if (document.documentElement.classList.contains("dark")) {
@@ -45,11 +42,12 @@ const BottomNavigation = () => {
         </div>
         <div id="toggle-button">
           <button id="theme-toggle" type="button" onClick={toggleTheme}>
-            {themeToggle ? (
+            <div className="inline dark:hidden">
               <div id="dark-toggle"></div>
-            ) : (
+            </div>
+            <div className="hidden dark:inline">
               <div id="light-toggle"></div>
-            )}
+            </div>
           </button>
         </div>
       </div>
