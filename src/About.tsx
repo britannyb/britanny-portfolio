@@ -46,7 +46,10 @@ const About = () => {
               />
             </div>
             <div className="pt-6 md:pt-0">
-              <a
+              <h4 className="text-black dark:text-white text-md md:text-xl">
+                Britanny Baldovino
+              </h4>
+              {/* <a
                 href="https://www.linkedin.com/in/britanny-baldovino/"
                 target="_blank"
                 className="text-white hover:text-pink flex items-center my-2"
@@ -62,7 +65,7 @@ const About = () => {
                   Britanny Baldovino
                   <StyledPointer />
                 </h4>
-              </a>
+              </a> */}
               <br />
               <AboutContainer iconType="magnify">
                 <p>
