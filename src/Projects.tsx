@@ -13,7 +13,7 @@ interface ColorProps {
 
 interface AppDesignContainerProps {
   logoLink: string;
-  urlText: string;
+  urlText?: string;
   paletteColors: string[];
   description: string;
   children: ReactNode;
@@ -74,14 +74,16 @@ function AppDesignContainer({
           height="160"
           width="160"
         />
-        <a
-          href={urlText}
-          target="_blank"
-          className="md:text-base text-black dark:text-white underline break-all hover:text-teal dark:hover:text-pink"
-        >
-          {urlText}
-          <StyledPointer />
-        </a>
+        {urlText !== undefined && (
+          <a
+            href={urlText}
+            target="_blank"
+            className="md:text-base text-black dark:text-white underline break-all hover:text-teal dark:hover:text-pink"
+          >
+            {urlText}
+            <StyledPointer />
+          </a>
+        )}
         <p className="my-4">{description}</p>
         <div className="w-64 flex space-x-8 items-center centered-image">
           <p>Color Palette:</p>
@@ -204,7 +206,6 @@ const Projects = () => {
           <ProjectContainer projectTitle="Fuwa Neko">
             <AppDesignContainer
               logoLink="images/designs/fuwaNekoLogoLight.png"
-              urlText="https://bit.ly/fuwaneko-facebook"
               paletteColors={["12D4B4", "3A4067", "0C8C74", "515CA6"]}
               description="Logo and poster design for a friend's booth that sells Japanese desserts."
             >
@@ -303,35 +304,6 @@ const Projects = () => {
                   alt="Kento Nanami nendoroid photography picture"
                   height="900"
                   width="674"
-                />
-              </div>
-            </ContainerContent>
-            <br />
-            <ContainerContent title="Debut Invitations">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                <img
-                  src="images/designs/goldInv.jpg"
-                  alt="Gold debut invitation image"
-                  height="699"
-                  width="496"
-                />
-                <img
-                  src="images/designs/goldInv2.jpg"
-                  alt="Gold debut invitation image page 2"
-                  height="699"
-                  width="496"
-                />
-                <img
-                  src="images/designs/modernInv.jpg"
-                  alt="Modern debut invitation image"
-                  height="699"
-                  width="496"
-                />
-                <img
-                  src="images/designs/modernInv2.jpg"
-                  alt="Modern debut invitation image page 2"
-                  height="699"
-                  width="496"
                 />
               </div>
             </ContainerContent>

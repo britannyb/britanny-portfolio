@@ -49,23 +49,6 @@ const About = () => {
               <h4 className="text-black dark:text-white text-md md:text-xl">
                 Britanny Baldovino
               </h4>
-              {/* <a
-                href="https://www.linkedin.com/in/britanny-baldovino/"
-                target="_blank"
-                className="text-white hover:text-pink flex items-center my-2"
-              >
-                <img
-                  src="images/linkedInLogo.png"
-                  alt="LinkedIn Icon"
-                  height="40"
-                  width="40"
-                  className="mr-2 hover:scale-125"
-                />
-                <h4 className="text-black dark:text-white hover:text-teal dark:hover:text-pink text-md md:text-xl">
-                  Britanny Baldovino
-                  <StyledPointer />
-                </h4>
-              </a> */}
               <br />
               <AboutContainer iconType="magnify">
                 <p>
