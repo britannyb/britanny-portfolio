@@ -47,7 +47,7 @@ const About = () => {
             </div>
             <div className="pt-6 md:pt-0">
               <h4 className="text-black dark:text-white text-md md:text-xl">
-                Britanny Baldovino
+                Britanny B
               </h4>
               <br />
               <AboutContainer iconType="magnify">
