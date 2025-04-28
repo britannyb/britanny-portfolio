@@ -246,41 +246,21 @@ const Projects = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2">
                 <img
                   src="images/drawing1.jpg"
-                  alt="Nezuko Fan Art"
+                  alt="You Fan Art"
                   height="900"
                   width="600"
                 />
                 <img
                   src="images/drawing2.jpg"
-                  alt="Zero Two Fan Art"
+                  alt="Barbie Fan Art"
                   height="900"
                   width="600"
                 />
                 <img
                   src="images/drawing3.jpg"
-                  alt="Miku Nakano Fan Art"
+                  alt="Nezuko Fan Art"
                   height="900"
                   width="600"
-                />
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image">
-                <img
-                  src="images/drawing4.jpg"
-                  alt="You Fan Art"
-                  height="900"
-                  width="690"
-                />
-                <img
-                  src="images/drawing5.jpg"
-                  alt="Spy X Family Fan Art"
-                  height="900"
-                  width="690"
-                />
-                <img
-                  src="images/drawing6.jpg"
-                  alt="Barbie Fan Art"
-                  height="900"
-                  width="690"
                 />
               </div>
             </ContainerContent>

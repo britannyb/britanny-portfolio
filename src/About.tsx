@@ -84,7 +84,7 @@ const About = () => {
                         width="40"
                         className="mr-2 hover:scale-125"
                       />
-                      britanny b.
+                      Britanny B.
                     </a>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const About = () => {
         </div>
       </div>
       <div className="text-white bg-dark-trans-black p-4 text-center md:text-right">
-        <p>˚₊‧ ૮꒰˶ᵔ ᵕ ᵔ˶꒱ა Britanny ‧₊˚✧˖°♡ 2023</p>
+        <p>Britanny ♡ 2023</p>
       </div>
     </div>
   );
