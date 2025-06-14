@@ -8,10 +8,10 @@ interface ContainerProps {
 const Container = ({ title, children }: ContainerProps) => {
   return (
     <>
-      <h1 className="container-title text-2xl md:text-3xl text-white dark:text-black z-10">
+      <h1 className="container-title text-2xl md:text-3xl text-white z-10">
         {title}
       </h1>
-      <div className="container-body rounded-md md:rounded-lg animate-shine -mt-3 md:-mt-5 bg-trans-white border border-8 border-white dark:border-black dark:bg-trans-black md:p-10">
+      <div className="container-body rounded-md md:rounded-lg -mt-3 md:-mt-5 border border-1 border-teal md:p-10 bg-teal bg-opacity-10 backdrop-blur-xl">
         {children}
       </div>
     </>

@@ -14,7 +14,7 @@ interface SkillLabelProps {
 function SkillContainer({ skillTitle, children }: SkillContainerProps) {
   return (
     <>
-      <h2 className="text-teal dark:text-pink text-sm md:text-md pink-title">
+      <h2 className="text-pink dark:text-white text-sm md:text-md pink-title">
         {skillTitle}
       </h2>
       <div className="flex flex-wrap">{children}</div>
@@ -28,14 +28,14 @@ function SkillLabel({ skillLabel, skillLogo }: SkillLabelProps) {
       <div className="w-10">
         <img src={skillLogo} alt={skillLabel} height="200" width="200" />
       </div>
-      <p className="text-black dark:text-white ml-1 mr-4">{skillLabel}</p>
+      <p className="text-white ml-1 mr-4">{skillLabel}</p>
     </div>
   );
 }
 
 const Skills = () => {
   return (
-    <div id="skills" className="main-container">
+    <div id="skills" className="skills-bg dark:skills-bg-dark main-container">
       <div className="content">
         <Container title="SKILLS">
           <div className="md:grid md:grid-cols-2">

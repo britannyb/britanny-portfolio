@@ -33,8 +33,6 @@ export default {
     animation: {
       wiggle: "wiggle 6s ease-in-out infinite",
       float: "float 4s ease-in-out infinite",
-      shine: "shine 8s ease-in-out infinite",
-      glow: "glow 8s ease-in-out infinite",
     },
     keyframes: {
       wiggle: {
@@ -44,26 +42,6 @@ export default {
       float: {
         "0%, 100%": { transform: "translatey(40px)" },
         "50%": { transform: "translatey(0px)" },
-      },
-      shine: {
-        "0%, 100%": {
-          borderRadius: "40px",
-          boxShadow:
-            "0 0 10px 5px #fff, 0 0 20px 10px #f0f, 0 0 20px 10px #0ff; inset 2px 2px 0 #fff;",
-        },
-        "50%": {
-          borderRadius: "10px",
-          boxShadow: "none",
-        },
-      },
-      glow: {
-        "0%, 100%": {
-          textShadow:
-            "0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f0f, 0 0 20px #0ff, 0 0 20px #fff",
-        },
-        "50%": {
-          textShadow: "none",
-        },
       },
     },
     extend: {},

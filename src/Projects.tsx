@@ -27,7 +27,7 @@ interface ContainerContentProps {
 function ProjectContainer({ projectTitle, children }: ProjectContainerProps) {
   return (
     <>
-      <h2 className="text-teal dark:text-pink text-sm md:text-md pink-title my-2 md:my-6">
+      <h2 className="text-pink dark:text-white text-sm md:text-md pink-title my-2 md:my-6">
         {projectTitle}
       </h2>
       <div>{children}</div>
@@ -51,7 +51,7 @@ function ColorPalette({ colors }: ColorProps) {
 function ContainerContent({ title, children }: ContainerContentProps) {
   return (
     <>
-      <h3 className="lowercase text-center lg:text-sm">{title}:</h3>
+      <h3 className="text-left lowercase lg:text-sm">*{title}:</h3>
       <div>{children}</div>
     </>
   );
@@ -66,7 +66,7 @@ function AppDesignContainer({
 }: AppDesignContainerProps) {
   return (
     <div className="md:flex text-center mb-8">
-      <div className="md:pr-4 md:mr-4 border border-0 md:border-r-2 md:border-dark-pink dark:md:border-pink w-full lg:w-1/4">
+      <div className="md:pr-4 md:mr-4 border border-0 md:border-r-2 border-teal w-full lg:w-1/4">
         <img
           className="py-2 centered-image"
           src={logoLink}
@@ -78,7 +78,7 @@ function AppDesignContainer({
           <a
             href={urlText}
             target="_blank"
-            className="md:text-base text-black dark:text-white underline break-all hover:text-teal dark:hover:text-pink"
+            className="md:text-base text-white underline break-all hover:text-pink"
           >
             {urlText}
             <StyledPointer />
@@ -97,7 +97,11 @@ function AppDesignContainer({
 
 const Projects = () => {
   return (
-    <div id="projects" className="main-container text-black dark:text-white">
+    <div
+      id="projects"
+      className="projects-bg dark:projects-bg-dark main-container text-white"
+    >
+      <div className="dark:stars"></div>
       <div className="content">
         <Container title="PROJECTS">
           <ProjectContainer projectTitle="Portfolio v1">
@@ -121,7 +125,7 @@ const Projects = () => {
             <AppDesignContainer
               logoLink="images/projects/vaccineHelpLogo.png"
               urlText="https://bit.ly/figma-vaccinehelp"
-              paletteColors={["0679D6", "50C0ED", "DDEEF5", "61327B"]}
+              paletteColors={["DDEEF5", "50C0ED", "0679D6", "61327B"]}
               description="A form interface designed for an application concerned with vaccination distribution."
             >
               <ContainerContent title="Form Design (Made with Figma)">
@@ -138,7 +142,7 @@ const Projects = () => {
             <AppDesignContainer
               logoLink="images/projects/helpCareLogo.png"
               urlText="https://bit.ly/figma-helpcare"
-              paletteColors={["676767", "539B9D", "86D19B", "D6F3D5"]}
+              paletteColors={["D6F3D5", "86D19B", "539B9D", "676767"]}
               description="A desktop interface for an appliction used for online health consultations."
             >
               <ContainerContent title="Desktop Prototype (Made with Figma)">
@@ -165,7 +169,7 @@ const Projects = () => {
             <AppDesignContainer
               logoLink="images/projects/motivEatLogo.png"
               urlText="https://motiveat.vercel.app/"
-              paletteColors={["2F2F2F", "42A46A", "65C2AF", "D78862"]}
+              paletteColors={["65C2AF", "42A46A", "D78862", "2F2F2F"]}
               description="My capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js."
             >
               <ContainerContent title="Mobile Prototype (Made with Figma)">
@@ -206,10 +210,10 @@ const Projects = () => {
           <ProjectContainer projectTitle="Fuwa Neko">
             <AppDesignContainer
               logoLink="images/designs/fuwaNekoLogoLight.png"
-              paletteColors={["12D4B4", "3A4067", "0C8C74", "515CA6"]}
+              paletteColors={["12D4B4", "0C8C74", "515CA6", "3A4067"]}
               description="Logo and poster design for a friend's booth that sells Japanese desserts."
             >
-              <ContainerContent title="Poster Designs">
+              <ContainerContent title="Poster Design">
                 <div
                   className="grid grid-cols-1 lg:flex centered-image"
                   style={{ maxWidth: "860px" }}
@@ -222,99 +226,39 @@ const Projects = () => {
                       width="572"
                     />
                   </div>
-                  <div
-                    className="grid grid-cols-2 lg:grid-cols-1 gap-2 centered-image pt-2 lg:pt-0"
-                    style={{ maxWidth: "580px" }}
-                  >
-                    <img
-                      className="centered-image max-h-96"
-                      src="images/designs/fuwaNekoPaint.jpg"
-                      alt="Fuwa Neko poster illustrated design"
-                    />
-                    <img
-                      className="centered-image max-h-96"
-                      src="images/designs/fuwaNekoBlue.jpg"
-                      alt="Fuwa Neko poster dark blue design"
-                    />
-                  </div>
                 </div>
               </ContainerContent>
             </AppDesignContainer>
           </ProjectContainer>
-          <ProjectContainer projectTitle="Art+Designs">
-            <ContainerContent title="Drawings">
+          <ProjectContainer projectTitle="Art+Photography">
+            <ContainerContent title="Sample Drawings">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2">
-                <img
-                  src="images/drawing1.jpg"
-                  alt="You Fan Art"
-                  height="900"
-                  width="600"
-                />
-                <img
-                  src="images/drawing2.jpg"
-                  alt="Barbie Fan Art"
-                  height="900"
-                  width="600"
-                />
-                <img
-                  src="images/drawing3.jpg"
-                  alt="Nezuko Fan Art"
-                  height="900"
-                  width="600"
-                />
+                <img src="images/drawing1.jpg" alt="Fan Art" height="700" />
+                <img src="images/drawing2.jpg" alt="Fan Art" height="700" />
+                <img src="images/drawing3.jpg" alt="Fan Art" height="700" />
               </div>
             </ContainerContent>
             <br />
             <ContainerContent title="Toy Photography">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images">
                 <img
-                  src="images/nendoroidRapunzel.jpg"
-                  alt="Rapunzel nendoroid photography picture"
+                  src="images/toy1.jpg"
+                  alt="Toy photography picture"
                   height="900"
                   width="674"
                 />
                 <img
-                  src="images/nendoroidMiku.jpg"
-                  alt="Miku Nakano nendoroid photography picture"
+                  src="images/toy2.jpg"
+                  alt="Toy photography picture"
                   height="900"
                   width="674"
                 />
                 <img
-                  src="images/nendoroidKento.jpg"
-                  alt="Kento Nanami nendoroid photography picture"
+                  src="images/toy3.jpg"
+                  alt="Toy photography picture"
                   height="900"
                   width="674"
                 />
-              </div>
-            </ContainerContent>
-            <br />
-            <ContainerContent title="Logos + LinkedIn Banner">
-              <div
-                className="flex items-center"
-                style={{ maxWidth: "1200px", margin: "0 auto" }}
-              >
-                <div>
-                  <img
-                    src="images/logoPink.png"
-                    alt="Britanny Portfolio Logo"
-                    height="140"
-                    width="102"
-                  />
-                  <img
-                    src="images/logoYellow.png"
-                    alt="Britanny Portfolio Logo"
-                    height="140"
-                    width="102"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="images/designs/linkedInBanner.jpg"
-                    alt="LinkedIn banner design image"
-                    height="278"
-                    width="1109"
-                  />
-                </div>
               </div>
             </ContainerContent>
           </ProjectContainer>

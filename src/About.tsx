@@ -31,24 +31,25 @@ const About = () => {
   }
 
   return (
-    <div id="about" className="main-container pb-14 md:pb-0">
-      <div className="content text-black dark:text-white">
+    <div
+      id="about"
+      className="about-bg dark:about-bg-dark main-container pb-14 md:pb-0"
+    >
+      <div className="content text-white">
         <Container title="ABOUT">
           <div className="lg:flex lg:space-x-11 items-center">
             <div className="pic-container">
               <div className="picture-shadow"></div>
               <div className="picture-frame"></div>
               <img
-                src="images/meDesk.jpg"
+                src="images/me.jpg"
                 alt="A picture of me"
                 height="720"
                 width="576"
               />
             </div>
             <div className="pt-6 md:pt-0">
-              <h4 className="text-black dark:text-white text-md md:text-xl">
-                Britanny B
-              </h4>
+              <h4 className="text-white text-md md:text-xl">Britanny B</h4>
               <br />
               <AboutContainer iconType="magnify">
                 <p>
@@ -73,7 +74,7 @@ const About = () => {
                 <div className="grid sm:grid-cols-2 gap-2 md:w-96">
                   <div>
                     <a
-                      className="text-black dark:text-white hover:text-teal dark:hover:text-pink flex items-center"
+                      className="text-white hover:text-pink flex items-center"
                       href="https://www.behance.net/britannyb"
                       target="_blank"
                     >
@@ -101,7 +102,7 @@ const About = () => {
                 <a
                   href="https://www.pexels.com/@mo-eid-1268975/"
                   target="_blank"
-                  className="text-black dark:text-white hover:text-teal break-words dark:hover:text-pink"
+                  className="text-white break-words hover:text-pink"
                 >
                   <h4 className="text-sm md:text-md">
                     Mo Eid @ Pexels
@@ -114,7 +115,7 @@ const About = () => {
                 <a
                   href="https://www.iconfinder.com/iconsets/line-basic-ecommerce"
                   target="_blank"
-                  className="text-black dark:text-white hover:text-teal break-words dark:hover:text-pink"
+                  className="text-white break-words hover:text-pink"
                 >
                   <h4 className="text-sm md:text-md">
                     Nikita Grachev @ Iconfinder
@@ -126,8 +127,8 @@ const About = () => {
           </Container>
         </div>
       </div>
-      <div className="text-white bg-dark-trans-black p-4 text-center md:text-right">
-        <p>Britanny ♡ 2023</p>
+      <div className="text-white bg-dark-trans-black p-4 text-right">
+        <p>✎ created by Britanny B</p>
       </div>
     </div>
   );
