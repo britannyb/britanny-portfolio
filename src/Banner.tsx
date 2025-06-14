@@ -23,7 +23,7 @@ const Banner = () => {
         </div>
         <div className="flex-1 relative text-center md:text-left">
           <div className="md:absolute md:bottom-8 xl:right-0">
-            <p className="text-white text-lg md:text-xl leading-3">
+            <p className="text-white text-md md:text-2xl leading-3">
               creativity + logic
             </p>
             <p
