@@ -232,7 +232,7 @@ const Projects = () => {
             </AppDesignContainer>
           </ProjectContainer>
           <ProjectContainer projectTitle="Art+Photography">
-            <ContainerContent title="Sample Drawings (Made with Procreate)">
+            <ContainerContent title="Sample Drawings (Procreate)">
               <div
                 id="drawing-gallery"
                 className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2 lg:pb-4"
@@ -252,7 +252,7 @@ const Projects = () => {
               </div>
             </ContainerContent>
             <br />
-            <ContainerContent title="Toy Photography (Taken and Edited by Me)">
+            <ContainerContent title="Toy Photography">
               <div
                 id="toy-gallery"
                 className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images"
