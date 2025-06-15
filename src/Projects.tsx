@@ -53,7 +53,7 @@ function ColorPalette({ colors }: ColorProps) {
 function ContainerContent({ title, children }: ContainerContentProps) {
   return (
     <>
-      <h3 className="text-center lowercase lg:text-sm">✎ {title}:</h3>
+      <h3 className="text-center lowercase text-sm lg:text-md">✎ {title}:</h3>
       <div>{children}</div>
     </>
   );
@@ -112,7 +112,7 @@ const Projects = () => {
               paletteColors={["FFFFFF", "EC968D", "C774CD", "454545"]}
               description="The first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
             >
-              <ContainerContent title="Desktop Prototype (Made with Figma)">
+              <ContainerContent title="Desktop Prototype">
                 <img
                   src="images/projects/portfolio1Prototype.png"
                   alt="Portfolio v1 prototype design image"
@@ -129,7 +129,7 @@ const Projects = () => {
               paletteColors={["DDEEF5", "50C0ED", "0679D6", "61327B"]}
               description="A form interface designed for an application concerned with vaccination distribution."
             >
-              <ContainerContent title="Form Design (Made with Figma)">
+              <ContainerContent title="Form Design (Figma)">
                 <img
                   src="images/projects/vaccineHelpPrototype.png"
                   alt="VaccineHelp prototype design image"
@@ -146,7 +146,7 @@ const Projects = () => {
               paletteColors={["D6F3D5", "86D19B", "539B9D", "676767"]}
               description="A desktop interface for an application used for online health consultations."
             >
-              <ContainerContent title="Desktop Prototype (Made with Figma)">
+              <ContainerContent title="Desktop Prototype (Figma)">
                 <img
                   src="images/projects/helpCarePrototype.png"
                   alt="HelpCare prototype design image"
@@ -155,7 +155,7 @@ const Projects = () => {
                 />
               </ContainerContent>
               <br />
-              <ContainerContent title="Logo Design Ideas (Made with Figma)">
+              <ContainerContent title="Logo Design Ideas (Figma)">
                 <img
                   className="centered-image"
                   src="images/projects/helpCareLogoDrafts.png"
@@ -173,7 +173,7 @@ const Projects = () => {
               paletteColors={["65C2AF", "42A46A", "D78862", "2F2F2F"]}
               description="My capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js."
             >
-              <ContainerContent title="Mobile Prototype (Made with Figma)">
+              <ContainerContent title="Mobile Prototype (Figma)">
                 <img
                   src="images/projects/motivEatMobilePrototype.png"
                   alt="MotivEat prototype design image"
@@ -184,7 +184,7 @@ const Projects = () => {
               <br />
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                 <div>
-                  <ContainerContent title="Logo Design Ideas (Made with Figma)">
+                  <ContainerContent title="Logo Design Ideas (Figma)">
                     <img
                       className="centered-image"
                       src="images/projects/motivEatLogoDrafts.png"
@@ -195,7 +195,7 @@ const Projects = () => {
                   </ContainerContent>
                 </div>
                 <div>
-                  <ContainerContent title="Survey Post (Made with Canva)">
+                  <ContainerContent title="Survey Post (Canva)">
                     <img
                       className="centered-image"
                       src="images/projects/motivEatPoster2.png"
@@ -214,7 +214,7 @@ const Projects = () => {
               paletteColors={["12D4B4", "0C8C74", "515CA6", "3A4067"]}
               description="Logo and poster design for a friend's booth that sells Japanese desserts."
             >
-              <ContainerContent title="Poster Design">
+              <ContainerContent title="Poster Design (Canva)">
                 <div
                   className="grid grid-cols-1 lg:flex centered-image"
                   style={{ maxWidth: "860px" }}
@@ -232,10 +232,10 @@ const Projects = () => {
             </AppDesignContainer>
           </ProjectContainer>
           <ProjectContainer projectTitle="Art+Photography">
-            <ContainerContent title="Sample Drawings">
+            <ContainerContent title="Sample Drawings (Made with Procreate)">
               <div
                 id="drawing-gallery"
-                className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2 lg:pb-4"
               >
                 <DrawingModal
                   imageUrl="images/drawing1.jpg"
@@ -252,7 +252,7 @@ const Projects = () => {
               </div>
             </ContainerContent>
             <br />
-            <ContainerContent title="Toy Photography">
+            <ContainerContent title="Toy Photography (Taken and Edited by Me)">
               <div
                 id="toy-gallery"
                 className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images"

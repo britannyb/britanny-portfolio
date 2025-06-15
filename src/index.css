@@ -292,13 +292,13 @@ button:focus-visible {
 
 .skills-bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/images/skillsBg.jpg") no-repeat bottom center;
+    url("/images/skillsBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .projects-bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/projectsBg.jpg") no-repeat bottom center;
+    url("/images/projectsBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
