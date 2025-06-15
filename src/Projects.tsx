@@ -1,6 +1,8 @@
 import Container from "./components/Container";
 import { ReactNode } from "react";
 import StyledPointer from "./components/StyledPointer";
+import ImageModal from "./components/ImageModal";
+import DrawingModal from "./components/DrawingModal";
 
 interface ProjectContainerProps {
   projectTitle: string;
@@ -51,7 +53,7 @@ function ColorPalette({ colors }: ColorProps) {
 function ContainerContent({ title, children }: ContainerContentProps) {
   return (
     <>
-      <h3 className="text-left lowercase lg:text-sm">*{title}:</h3>
+      <h3 className="text-center lowercase lg:text-sm">✎ {title}:</h3>
       <div>{children}</div>
     </>
   );
@@ -74,6 +76,9 @@ function AppDesignContainer({
           height="160"
           width="160"
         />
+        <div className="items-center centered-image">
+          <ColorPalette colors={paletteColors} />
+        </div>
         {urlText !== undefined && (
           <a
             href={urlText}
@@ -85,10 +90,6 @@ function AppDesignContainer({
           </a>
         )}
         <p className="my-4">{description}</p>
-        <div className="w-64 flex space-x-8 items-center centered-image">
-          <p>Color Palette:</p>
-          <ColorPalette colors={paletteColors} />
-        </div>
       </div>
       <div className="my-4 w-full lg:w-3/4">{children}</div>
     </div>
@@ -143,7 +144,7 @@ const Projects = () => {
               logoLink="images/projects/helpCareLogo.png"
               urlText="https://bit.ly/figma-helpcare"
               paletteColors={["D6F3D5", "86D19B", "539B9D", "676767"]}
-              description="A desktop interface for an appliction used for online health consultations."
+              description="A desktop interface for an application used for online health consultations."
             >
               <ContainerContent title="Desktop Prototype (Made with Figma)">
                 <img
@@ -232,33 +233,42 @@ const Projects = () => {
           </ProjectContainer>
           <ProjectContainer projectTitle="Art+Photography">
             <ContainerContent title="Sample Drawings">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2">
-                <img src="images/drawing1.jpg" alt="Fan Art" height="700" />
-                <img src="images/drawing2.jpg" alt="Fan Art" height="700" />
-                <img src="images/drawing3.jpg" alt="Fan Art" height="700" />
+              <div
+                id="drawing-gallery"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2"
+              >
+                <DrawingModal
+                  imageUrl="images/drawing1.jpg"
+                  altContent="Dogs art"
+                ></DrawingModal>
+                <DrawingModal
+                  imageUrl="images/drawing2.jpg"
+                  altContent="Cyberpunk Edgerunners stickers art"
+                ></DrawingModal>
+                <DrawingModal
+                  imageUrl="images/drawing3.jpg"
+                  altContent="Cyberpunk 2077 Alt fan art"
+                ></DrawingModal>
               </div>
             </ContainerContent>
             <br />
             <ContainerContent title="Toy Photography">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images">
-                <img
-                  src="images/toy1.jpg"
-                  alt="Toy photography picture"
-                  height="900"
-                  width="674"
-                />
-                <img
-                  src="images/toy2.jpg"
-                  alt="Toy photography picture"
-                  height="900"
-                  width="674"
-                />
-                <img
-                  src="images/toy3.jpg"
-                  alt="Toy photography picture"
-                  height="900"
-                  width="674"
-                />
+              <div
+                id="toy-gallery"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images"
+              >
+                <ImageModal
+                  imageUrl="images/toy1.jpg"
+                  altContent="Nendoroid Johnny Silverhand photography picture"
+                ></ImageModal>
+                <ImageModal
+                  imageUrl="images/toy2.jpg"
+                  altContent="Nendoroid Miku Nakano photography picture"
+                ></ImageModal>
+                <ImageModal
+                  imageUrl="images/toy3.jpg"
+                  altContent="Fallout Funkos and art photography picture"
+                ></ImageModal>
               </div>
             </ContainerContent>
           </ProjectContainer>

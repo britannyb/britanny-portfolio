@@ -261,7 +261,29 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* backgrounds */
+#toy-gallery,
+#drawing-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#toy-gallery div:nth-of-type(even),
+#drawing-gallery div:nth-of-type(odd) {
+  transform: rotate(5deg);
+}
+
+#toy-gallery div:nth-of-type(odd),
+#drawing-gallery div:nth-of-type(even) {
+  transform: rotate(-5deg);
+}
+
+#toy-gallery div:nth-of-type(odd):hover,
+#toy-gallery div:nth-of-type(even):hover,
+#drawing-gallery div:nth-of-type(odd):hover,
+#drawing-gallery div:nth-of-type(even):hover {
+  transform: none;
+}
+
 .welcome-bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/homeTopBg.jpg") no-repeat center center;
