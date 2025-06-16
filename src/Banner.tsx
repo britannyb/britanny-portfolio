@@ -14,7 +14,7 @@ const Banner = () => {
             width="600"
           />
           <img
-            className="main-img absolute top-0 right-0 animate-wiggle"
+            className="main-img absolute top-0 -right-14 md:-right-28 animate-wiggle"
             src="images/drawingPen.png"
             alt="A drawing tablet stylus"
             height="704"
