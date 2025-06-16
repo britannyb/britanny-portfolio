@@ -33,7 +33,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
         <img
           src={imageUrl}
           alt={altContent}
-          className="object-contain"
+          className="object-contain p-2"
           onClick={(e) => e.stopPropagation()}
         />
       </div>
