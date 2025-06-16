@@ -45,7 +45,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       <img
         src={imageUrl}
         alt="{altContent} thumbnail"
-        className="bg-white shadow-xl rounded-sm overflow-hidden cursor-pointer"
+        className="bg-white border border-teal border-2 shadow-xl rounded-sm overflow-hidden cursor-pointer"
         onClick={() => setIsOpen(true)}
       />
 

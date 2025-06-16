@@ -53,7 +53,9 @@ function ColorPalette({ colors }: ColorProps) {
 function ContainerContent({ title, children }: ContainerContentProps) {
   return (
     <>
-      <h3 className="text-center lowercase text-sm lg:text-md">✎ {title}:</h3>
+      <h3 className="text-center lowercase md:text-sm lg:text-md">
+        ✎ {title}:
+      </h3>
       <div>{children}</div>
     </>
   );
