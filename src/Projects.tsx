@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import StyledPointer from "./components/StyledPointer";
 import ImageModal from "./components/ImageModal";
 import DrawingModal from "./components/DrawingModal";
+import Paper from "./components/Paper";
 
 interface ProjectContainerProps {
   projectTitle: string;
@@ -25,6 +26,12 @@ interface AppDesignContainerProps {
 interface ContainerContentProps {
   title: string;
   children: ReactNode;
+}
+
+interface JournalArticleProps {
+  title: string;
+  url: string;
+  addLink?: string;
 }
 
 function ProjectContainer({ projectTitle, children }: ProjectContainerProps) {
@@ -97,6 +104,22 @@ function AppDesignContainer({
       </div>
       <div className="my-4 w-full lg:w-3/4">{children}</div>
     </div>
+  );
+}
+
+function JournalArticle({ title, url, addLink }: JournalArticleProps) {
+  return (
+    <>
+      <div className="flex items-center space-x-2 underline md:text-sm my-4">
+        <div className="sm:flex-grow-2">
+          <Paper />
+        </div>
+        <a className="text-white hover:text-pink" href={url} target="_blank">
+          {title}
+          <StyledPointer />
+        </a>
+      </div>
+    </>
   );
 }
 
@@ -288,7 +311,7 @@ const Projects = () => {
             <ContainerContent title="Toy Photography">
               <div
                 id="toy-gallery"
-                className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images pb-4"
               >
                 <ImageModal
                   imageUrl="images/toy1.jpg"
@@ -304,6 +327,14 @@ const Projects = () => {
                 ></ImageModal>
               </div>
             </ContainerContent>
+          </ProjectContainer>
+          <ProjectContainer projectTitle="Journal Article/s">
+            <JournalArticle
+              title="An Overview of the Networking Issues of Cloud Gaming: A Literature
+              Review"
+              url="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
+              addLink="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
+            ></JournalArticle>
           </ProjectContainer>
         </Container>
       </div>
