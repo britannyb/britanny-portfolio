@@ -268,7 +268,7 @@ const Projects = () => {
             <ContainerContent title="Sample Drawings (Procreate)">
               <div
                 id="drawing-gallery"
-                className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-2 lg:pb-4"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
               >
                 <DrawingModal
                   imageUrl="images/drawing1.jpg"
