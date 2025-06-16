@@ -24,7 +24,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       <div className="relative">
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white bg-trans-black p-2"
+          className="absolute top-2 right-2 text-white bg-trans-black p-2 rounded-md"
           aria-label="Close image"
         >
           ✕
@@ -42,12 +42,16 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
 
   return (
     <div className="p-4">
-      <img
-        src={imageUrl}
-        alt="{altContent} thumbnail"
-        className="bg-white border border-teal border-2 shadow-xl rounded-sm overflow-hidden cursor-pointer"
-        onClick={() => setIsOpen(true)}
-      />
+      <div className="drawing relative">
+        <div className="drawing-folder"></div>
+        <div className="drawing-paper shadow-2xl"></div>
+        <img
+          src={imageUrl}
+          alt="{altContent} thumbnail"
+          className="bg-white border border-white border-2 shadow-2xl rounded-sm overflow-hidden cursor-pointer"
+          onClick={() => setIsOpen(true)}
+        />
+      </div>
 
       {isOpen && (
         <div className="p-4">

@@ -15,6 +15,7 @@ interface ColorProps {
 
 interface AppDesignContainerProps {
   logoLink: string;
+  url?: string;
   urlText?: string;
   paletteColors: string[];
   description: string;
@@ -56,7 +57,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
       <h3 className="text-center lowercase md:text-sm lg:text-md">
         ✎ {title}:
       </h3>
-      <div>{children}</div>
+      <div className="px-0 lg:px-[10%]">{children}</div>
     </>
   );
 }
@@ -64,6 +65,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
 function AppDesignContainer({
   logoLink,
   urlText,
+  url,
   paletteColors,
   description,
   children,
@@ -83,7 +85,7 @@ function AppDesignContainer({
         </div>
         {urlText !== undefined && (
           <a
-            href={urlText}
+            href={url}
             target="_blank"
             className="md:text-base text-white underline break-all hover:text-pink"
           >
@@ -110,6 +112,7 @@ const Projects = () => {
           <ProjectContainer projectTitle="Portfolio v1">
             <AppDesignContainer
               logoLink="images/projects/portfolio1Logo.png"
+              url="https://britannyb.github.io/"
               urlText="https://britannyb.github.io/"
               paletteColors={["FFFFFF", "EC968D", "C774CD", "454545"]}
               description="The first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
@@ -127,7 +130,8 @@ const Projects = () => {
           <ProjectContainer projectTitle="VaccineHelp">
             <AppDesignContainer
               logoLink="images/projects/vaccineHelpLogo.png"
-              urlText="https://bit.ly/figma-vaccinehelp"
+              url="https://www.figma.com/file/dWQSisktmgE2u9Wyz8EzMA/VaccineHelp?type=design&node-id=0:1&mode=design&t=stGJ6g6EvQkPi2pJ-1"
+              urlText="VaccineHelp design"
               paletteColors={["DDEEF5", "50C0ED", "0679D6", "61327B"]}
               description="A form interface designed for an application concerned with vaccination distribution."
             >
@@ -144,7 +148,8 @@ const Projects = () => {
           <ProjectContainer projectTitle="HelpCare">
             <AppDesignContainer
               logoLink="images/projects/helpCareLogo.png"
-              urlText="https://bit.ly/figma-helpcare"
+              url="https://www.figma.com/file/OblFEXcUSwfGDll900FlOA/HelpCare?type=design&node-id=6:3&mode=design&t=stGJ6g6EvQkPi2pJ-1"
+              urlText="HelpCare prototype"
               paletteColors={["D6F3D5", "86D19B", "539B9D", "676767"]}
               description="A desktop interface for an application used for online health consultations."
             >
@@ -171,6 +176,7 @@ const Projects = () => {
           <ProjectContainer projectTitle="MotivEat">
             <AppDesignContainer
               logoLink="images/projects/motivEatLogo.png"
+              url="https://motiveat.vercel.app/"
               urlText="https://motiveat.vercel.app/"
               paletteColors={["65C2AF", "42A46A", "D78862", "2F2F2F"]}
               description="My capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js."
@@ -208,6 +214,31 @@ const Projects = () => {
                   </ContainerContent>
                 </div>
               </div>
+            </AppDesignContainer>
+          </ProjectContainer>
+          <ProjectContainer projectTitle="Portfolio (Alt. Ver.)">
+            <AppDesignContainer
+              url="https://britannyb-portfolio.vercel.app/"
+              urlText="https://britannyb-portfolio.vercel.app/"
+              logoLink="images/projects/portfolio2Logo.png"
+              paletteColors={["FFFFFF", "E77B83", "8DA960", "414040"]}
+              description="An alternative version of my portfolio website with drawings made in Proreate. It was developed with React and TailwindCSS."
+            >
+              <ContainerContent title="Website Prototype (Figma)">
+                <div
+                  className="grid grid-cols-1 lg:flex centered-image"
+                  style={{ maxWidth: "860px" }}
+                >
+                  <div className="lg:pr-2 centered-image">
+                    <img
+                      src="images/projects/portfolio2Prototype.png"
+                      alt="Portfolio Website design image"
+                      height="1374"
+                      width="1200"
+                    />
+                  </div>
+                </div>
+              </ContainerContent>
             </AppDesignContainer>
           </ProjectContainer>
           <ProjectContainer projectTitle="Fuwa Neko">

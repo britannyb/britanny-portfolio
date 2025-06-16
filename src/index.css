@@ -241,32 +241,6 @@ h4 {
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-#toy-gallery,
-#drawing-gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 #toy-gallery div:nth-of-type(even),
 #drawing-gallery div:nth-of-type(odd) {
   transform: rotate(5deg);
@@ -282,6 +256,44 @@ button:focus-visible {
 #drawing-gallery div:nth-of-type(odd):hover,
 #drawing-gallery div:nth-of-type(even):hover {
   transform: none;
+  scale: 1.05;
+}
+
+.drawing-folder {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(254 185 198);
+  border: 6px solid rgb(254 185 198);
+  border-radius: 25px;
+  z-index: -2;
+}
+
+.drawing-folder::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -25px;
+  height: 48%;
+  width: 40px;
+  background-color: rgb(254 185 198);
+  border: 6px solid rgb(254 185 198);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+}
+
+.drawing-paper {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 6px solid #ffffff;
+  z-index: -1;
 }
 
 .welcome-bg {
