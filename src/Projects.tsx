@@ -239,7 +239,7 @@ const Projects = () => {
               </div>
             </AppDesignContainer>
           </ProjectContainer>
-          <ProjectContainer projectTitle="Portfolio (Alt. Ver.)">
+          <ProjectContainer projectTitle="Portfolio (Alt.)">
             <AppDesignContainer
               url="https://britannyb-portfolio.vercel.app/"
               urlText="https://britannyb-portfolio.vercel.app/"
