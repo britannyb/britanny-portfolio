@@ -31,7 +31,6 @@ interface ContainerContentProps {
 interface JournalArticleProps {
   title: string;
   url: string;
-  addLink?: string;
 }
 
 function ProjectContainer({ projectTitle, children }: ProjectContainerProps) {
@@ -107,7 +106,7 @@ function AppDesignContainer({
   );
 }
 
-function JournalArticle({ title, url, addLink }: JournalArticleProps) {
+function JournalArticle({ title, url }: JournalArticleProps) {
   return (
     <>
       <div className="flex items-center space-x-2 underline md:text-sm my-4">
@@ -333,7 +332,6 @@ const Projects = () => {
               title="An Overview of the Networking Issues of Cloud Gaming: A Literature
               Review"
               url="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
-              addLink="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
             ></JournalArticle>
           </ProjectContainer>
         </Container>
