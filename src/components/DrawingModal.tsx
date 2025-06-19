@@ -54,7 +54,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
         />
         <div
           id="zoom"
-          className="fixed bottom-0 right-0 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
+          className="fixed bottom-2 left-2 md:bottom-1 md:left-1 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
           onClick={() => setIsOpen(true)}
         >
           <Glass />

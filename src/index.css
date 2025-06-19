@@ -241,14 +241,20 @@ h4 {
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
-#toy-gallery div:nth-of-type(even),
-#drawing-gallery div:nth-of-type(odd) {
-  transform: rotate(5deg);
+#toy-gallery div:nth-of-type(even) {
+  transform: rotate(10deg);
 }
 
-#toy-gallery div:nth-of-type(odd),
-#drawing-gallery div:nth-of-type(even) {
+#toy-gallery div:nth-of-type(odd) {
   transform: rotate(-5deg);
+}
+
+#drawing-gallery div:nth-of-type(odd) {
+  transform: rotate(2deg);
+}
+
+#drawing-gallery div:nth-of-type(even) {
+  transform: rotate(-10deg);
 }
 
 #toy-gallery div:nth-of-type(odd):hover,
