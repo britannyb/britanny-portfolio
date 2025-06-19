@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
+import Glass from "./Glass";
 
 interface ImageModal {
   imageUrl: string;
@@ -24,7 +25,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       <div className="relative">
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 rounded-md"
+          className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 hover:p-2.5 rounded-md"
           aria-label="Close image"
         >
           ✕
@@ -51,6 +52,13 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
           className="bg-white border border-white border-2 shadow-2xl rounded-sm overflow-hidden cursor-pointer"
           onClick={() => setIsOpen(true)}
         />
+        <div
+          id="zoom"
+          className="fixed bottom-0 right-0 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
+          onClick={() => setIsOpen(true)}
+        >
+          <Glass />
+        </div>
       </div>
 
       {isOpen && (
