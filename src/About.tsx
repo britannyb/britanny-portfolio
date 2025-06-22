@@ -87,7 +87,23 @@ const About = () => {
                         width="40"
                         className="mr-2 hover:scale-125"
                       />
-                      Britanny B.
+                      Behance: @britannyb
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      className="text-white hover:text-pink flex items-center"
+                      href="https://rive.app/@britannyb/"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/riveLogo.png"
+                        alt="Rive Icon"
+                        height="40"
+                        width="40"
+                        className="mr-2 hover:scale-125"
+                      />
+                      Rive: @britannyb
                     </a>
                   </div>
                 </div>
