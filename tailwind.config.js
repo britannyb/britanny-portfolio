@@ -33,15 +33,27 @@ export default {
     animation: {
       wiggle: "wiggle 6s ease-in-out infinite",
       float: "float 4s ease-in-out infinite",
+      bubble: "fly 10s ease-in-out infinite",
     },
     keyframes: {
       wiggle: {
-        "0%, 100%": { transform: "rotate(-6deg) translatey(-40px)" },
-        "50%": { transform: "rotate(6deg) translatey(0px)" },
+        "0%, 100%": { transform: "rotate(-6deg) translateY(-40px)" },
+        "50%": { transform: "rotate(6deg) translateY(0px)" },
       },
       float: {
-        "0%, 100%": { transform: "translatey(40px)" },
-        "50%": { transform: "translatey(0px)" },
+        "0%, 100%": { transform: "translateY(40px)" },
+        "50%": { transform: "translateY(0px)" },
+      },
+      fly: {
+        "0%": {
+          transform: "translateY(0) translateX(0)",
+        },
+        "50%": {
+          transform: "translateY(-80vh) translateX(120vw)",
+        },
+        "100%": {
+          transform: "translateY(0) translateX(0)",
+        },
       },
     },
     extend: {},
