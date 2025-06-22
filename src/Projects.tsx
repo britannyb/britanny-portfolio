@@ -63,7 +63,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
       <h3 className="text-center lowercase md:m-2 md:text-sm lg:text-md">
         ✎ {title}:
       </h3>
-      <div className="px-0 lg:px-[12%]">{children}</div>
+      <div className="flex justify-center">{children}</div>
     </>
   );
 }
@@ -171,8 +171,8 @@ const Projects = () => {
                 <img
                   src="images/projects/motivEatMobilePrototype.png"
                   alt="MotivEat prototype design image"
-                  height="1297"
-                  width="1770"
+                  height="1028"
+                  width="900"
                 />
               </ContainerContent>
               <br />
@@ -214,8 +214,8 @@ const Projects = () => {
                 <img
                   src="images/projects/vaccineHelpPrototype.png"
                   alt="VaccineHelp prototype design image"
-                  height="566"
-                  width="1600"
+                  height="1175"
+                  width="800"
                 />
               </ContainerContent>
             </AppDesignContainer>
@@ -237,7 +237,7 @@ const Projects = () => {
                     <img
                       src="images/projects/portfolio2Prototype.png"
                       alt="Portfolio Website design image"
-                      height="1374"
+                      height="1770"
                       width="1200"
                     />
                   </div>
@@ -257,8 +257,8 @@ const Projects = () => {
                 <img
                   src="images/projects/portfolio1Prototype.png"
                   alt="Portfolio v1 prototype design image"
-                  height="1374"
-                  width="1770"
+                  height="1489"
+                  width="1200"
                 />
               </ContainerContent>
             </AppDesignContainer>
