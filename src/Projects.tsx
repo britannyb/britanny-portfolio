@@ -63,7 +63,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
       <h3 className="text-center lowercase md:m-2 md:text-sm lg:text-md">
         ✎ {title}:
       </h3>
-      <div className="px-0 lg:px-[10%]">{children}</div>
+      <div className="px-0 lg:px-[12%]">{children}</div>
     </>
   );
 }
@@ -131,42 +131,6 @@ const Projects = () => {
       <div className="dark:stars"></div>
       <div className="content">
         <Container title="PROJECTS">
-          <ProjectContainer projectTitle="Portfolio v1">
-            <AppDesignContainer
-              logoLink="images/projects/portfolio1Logo.png"
-              url="https://britannyb.github.io/"
-              urlText="https://britannyb.github.io/"
-              paletteColors={["FFFFFF", "EC968D", "C774CD", "454545"]}
-              description="The first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
-            >
-              <ContainerContent title="Desktop Prototype">
-                <img
-                  src="images/projects/portfolio1Prototype.png"
-                  alt="Portfolio v1 prototype design image"
-                  height="1374"
-                  width="1770"
-                />
-              </ContainerContent>
-            </AppDesignContainer>
-          </ProjectContainer>
-          <ProjectContainer projectTitle="VaccineHelp">
-            <AppDesignContainer
-              logoLink="images/projects/vaccineHelpLogo.png"
-              url="https://www.figma.com/file/dWQSisktmgE2u9Wyz8EzMA/VaccineHelp?type=design&node-id=0:1&mode=design&t=stGJ6g6EvQkPi2pJ-1"
-              urlText="VaccineHelp design"
-              paletteColors={["DDEEF5", "50C0ED", "0679D6", "61327B"]}
-              description="A form interface designed for an application concerned with vaccination distribution."
-            >
-              <ContainerContent title="Form Design (Figma)">
-                <img
-                  src="images/projects/vaccineHelpPrototype.png"
-                  alt="VaccineHelp prototype design image"
-                  height="566"
-                  width="1600"
-                />
-              </ContainerContent>
-            </AppDesignContainer>
-          </ProjectContainer>
           <ProjectContainer projectTitle="HelpCare">
             <AppDesignContainer
               logoLink="images/projects/helpCareLogo.png"
@@ -238,6 +202,24 @@ const Projects = () => {
               </div>
             </AppDesignContainer>
           </ProjectContainer>
+          <ProjectContainer projectTitle="VaccineHelp">
+            <AppDesignContainer
+              logoLink="images/projects/vaccineHelpLogo.png"
+              url="https://www.figma.com/file/dWQSisktmgE2u9Wyz8EzMA/VaccineHelp?type=design&node-id=0:1&mode=design&t=stGJ6g6EvQkPi2pJ-1"
+              urlText="VaccineHelp design"
+              paletteColors={["DDEEF5", "50C0ED", "0679D6", "61327B"]}
+              description="A form interface designed for an application concerned with vaccination distribution."
+            >
+              <ContainerContent title="Form Design (Figma)">
+                <img
+                  src="images/projects/vaccineHelpPrototype.png"
+                  alt="VaccineHelp prototype design image"
+                  height="566"
+                  width="1600"
+                />
+              </ContainerContent>
+            </AppDesignContainer>
+          </ProjectContainer>
           <ProjectContainer projectTitle="Portfolio (Alt.)">
             <AppDesignContainer
               url="https://britannyb-portfolio.vercel.app/"
@@ -260,6 +242,24 @@ const Projects = () => {
                     />
                   </div>
                 </div>
+              </ContainerContent>
+            </AppDesignContainer>
+          </ProjectContainer>
+          <ProjectContainer projectTitle="Portfolio v1">
+            <AppDesignContainer
+              logoLink="images/projects/portfolio1Logo.png"
+              url="https://britannyb.github.io/"
+              urlText="https://britannyb.github.io/"
+              paletteColors={["FFFFFF", "EC968D", "C774CD", "454545"]}
+              description="The first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
+            >
+              <ContainerContent title="Desktop Prototype">
+                <img
+                  src="images/projects/portfolio1Prototype.png"
+                  alt="Portfolio v1 prototype design image"
+                  height="1374"
+                  width="1770"
+                />
               </ContainerContent>
             </AppDesignContainer>
           </ProjectContainer>
