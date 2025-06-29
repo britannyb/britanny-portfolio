@@ -24,7 +24,7 @@ const Banner = () => {
             width="948"
           />
         </div>
-        <div className="flex-1 relative text-center md:text-left">
+        <div className="flex-1 relative text-center md:text-right">
           <div className="md:absolute md:bottom-8 xl:right-0">
             <p className="text-white text-md md:text-2xl leading-3">
               creativity + logic
