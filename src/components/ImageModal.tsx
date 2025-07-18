@@ -47,12 +47,15 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
         <img
           src={imageUrl}
           alt={altContent}
-          className="bg-white p-2 pb-9 md:pb-12 lg:pb-14 shadow-xl rounded-sm overflow-hidden cursor-pointer"
+          className="bg-white p-2 shadow-xl rounded-sm overflow-hidden cursor-pointer"
           onClick={() => setIsOpen(true)}
         />
+        <p className="w-full center bg-white -mt-1 text-black text-center md:text-xsm lg:text-sm py-4">
+          {altContent}
+        </p>
         <div
           id="zoom"
-          className="fixed bottom-6 left-2 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
+          className="fixed top-6 right-2 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
           onClick={() => setIsOpen(true)}
         >
           <Glass />

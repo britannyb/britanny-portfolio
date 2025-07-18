@@ -310,19 +310,19 @@ const Projects = () => {
             <ContainerContent title="Toy Photography">
               <div
                 id="toy-gallery"
-                className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images pb-4"
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
               >
                 <ImageModal
                   imageUrl="images/toy1.jpg"
-                  altContent="Nendoroid Johnny Silverhand photography picture"
+                  altContent="Silverhand Nendography"
                 ></ImageModal>
                 <ImageModal
                   imageUrl="images/toy2.jpg"
-                  altContent="Nendoroid Miku Nakano photography picture"
+                  altContent="Nakano Nendography"
                 ></ImageModal>
                 <ImageModal
                   imageUrl="images/toy3.jpg"
-                  altContent="Fallout Funkos and art photography picture"
+                  altContent="Fallout Fan Art"
                 ></ImageModal>
               </div>
             </ContainerContent>
