@@ -43,11 +43,11 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
 
   return (
     <div className="p-4">
-      <div>
+      <div className="shadow-xl">
         <img
           src={imageUrl}
           alt={altContent}
-          className="bg-white p-2 shadow-xl rounded-sm overflow-hidden cursor-pointer"
+          className="bg-white p-2 rounded-sm overflow-hidden cursor-pointer"
           onClick={() => setIsOpen(true)}
         />
         <p className="w-full center bg-white -mt-1 text-black text-center md:text-xsm lg:text-sm py-4">
