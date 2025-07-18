@@ -26,7 +26,7 @@ const BottomNavigation = () => {
   };
   return (
     <>
-      <div className="fixed bg-dark-trans-white dark:bg-trans-black rounded-br-lg absolute left-0 top-0 p-2 z-60">
+      <div className="fixed bg-white dark:bg-teal bg-opacity-50 dark:bg-opacity-10 backdrop-blur-xl rounded-br-lg absolute left-0 top-0 p-2 z-60">
         <div className="p-2">
           <img
             src="images/logoPink.png"
@@ -50,8 +50,8 @@ const BottomNavigation = () => {
           </button>
         </div>
       </div>
-      <div className="navigation fixed left-0 bottom-0 bg-trans-black w-full z-40">
-        <div className="bg-dark-trans-white dark:bg-dark-trans-black px-2 py-1">
+      <div className="navigation fixed left-0 bottom-0 w-full z-40">
+        <div className="bg-white dark:bg-teal bg-opacity-50 dark:bg-opacity-10 backdrop-blur-xl px-2 py-1">
           <div>
             <ul className="grid grid-cols-4 text-xsm navigation-content">
               <li>

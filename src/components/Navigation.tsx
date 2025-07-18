@@ -26,7 +26,7 @@ const Navigation = () => {
   };
   return (
     <div className="fixed left-0 top-0 w-full z-40 navigation rounded-b-lg">
-      <div className="flex items-center bg-dark-trans-white dark:bg-dark-trans-black px-6 py-2 rounded-b-lg">
+      <div className="flex items-center bg-white dark:bg-teal bg-opacity-50 dark:bg-opacity-10 backdrop-blur-xl px-6 py-2 rounded-b-lg">
         <div className="mr-16">
           <img
             src="images/logoPink.png"
