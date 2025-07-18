@@ -4,9 +4,10 @@ const Banner = () => {
   return (
     <div
       id="welcome"
-      className="welcome-bg dark:welcome-bg-dark relative overflow-x-hidden main-container py-16">
+      className="welcome-bg dark:welcome-bg-dark relative overflow-x-hidden main-container py-16"
+    >
       <Bubbles />
-      <div className="content md:flex md:flex-row-reverse">
+      <div className="content lg:flex lg:flex-row-reverse">
         <div id="girl" className="mb-4">
           <img
             className="main-img animate-float"
@@ -23,14 +24,15 @@ const Banner = () => {
             width="948"
           />
         </div>
-        <div className="flex-1 relative text-center md:text-right">
-          <div className="md:absolute md:bottom-8 xl:right-0">
+        <div className="flex-1 relative text-center lg:text-right">
+          <div className="lg:absolute lg:bottom-8 xl:right-0">
             <p className="text-white text-md md:text-2xl leading-3">
               creativity + logic
             </p>
             <p
               id="name"
-              className="text-white text-2xl md:text-3xl xl:text-4xl">
+              className="text-white text-2xl md:text-3xl xl:text-4xl"
+            >
               Britanny
             </p>
           </div>
