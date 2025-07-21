@@ -33,8 +33,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about-bg dark:about-bg-dark main-container pb-14 md:pb-0"
-    >
+      className="about-bg dark:about-bg-dark main-container pb-14 md:pb-0">
       <div className="content text-white">
         <Container title="ABOUT">
           <div className="lg:flex lg:space-x-11 items-center">
@@ -78,8 +77,7 @@ const About = () => {
                     <a
                       className="text-white hover:text-pink flex items-center"
                       href="https://www.behance.net/britannyb"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img
                         src="images/behanceLogo.png"
                         alt="Behance Icon"
@@ -94,8 +92,7 @@ const About = () => {
                     <a
                       className="text-white hover:text-pink flex items-center"
                       href="https://rive.app/@britannyb/"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img
                         src="images/riveLogo.png"
                         alt="Rive Icon"
@@ -120,8 +117,7 @@ const About = () => {
                 <a
                   href="https://www.pexels.com/@mo-eid-1268975/"
                   target="_blank"
-                  className="text-white break-words hover:text-pink"
-                >
+                  className="text-white break-words hover:text-pink">
                   <h4 className="text-sm md:text-md">
                     Mo Eid @ Pexels
                     <StyledPointer />
@@ -133,8 +129,7 @@ const About = () => {
                 <a
                   href="https://www.iconfinder.com/iconsets/line-basic-ecommerce"
                   target="_blank"
-                  className="text-white break-words hover:text-pink"
-                >
+                  className="text-white break-words hover:text-pink">
                   <h4 className="text-sm md:text-md">
                     Nikita Grachev @ Iconfinder
                     <StyledPointer />
