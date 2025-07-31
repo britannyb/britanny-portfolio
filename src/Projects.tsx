@@ -290,7 +290,7 @@ const Projects = () => {
             <ContainerContent title="Sample Drawings (Procreate)">
               <div
                 id="drawing-gallery"
-                className="lg:w-[95%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
+                className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
               >
                 <DrawingModal
                   imageUrl="images/drawing1.jpg"
@@ -307,18 +307,18 @@ const Projects = () => {
               </div>
             </ContainerContent>
             <br />
-            <ContainerContent title="Toy Photography">
+            <ContainerContent title="Toy Photography Samples">
               <div
                 id="toy-gallery"
-                className="lg:w-[95%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
+                className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
               >
                 <ImageModal
                   imageUrl="images/toy1.jpg"
-                  altContent="Silverhand Nendography"
+                  altContent="J. Silverhand"
                 ></ImageModal>
                 <ImageModal
                   imageUrl="images/toy2.jpg"
-                  altContent="Nakano Nendography"
+                  altContent="M. Nakano"
                 ></ImageModal>
                 <ImageModal
                   imageUrl="images/toy3.jpg"
