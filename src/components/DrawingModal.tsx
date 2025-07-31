@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
 import Glass from "./Glass";
+import RotateImage from "./RotateImage";
 
 interface ImageModal {
   imageUrl: string;
@@ -19,25 +20,15 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
 
   const modal = (
     <div
-      className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center"
+      className="px-2 fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center"
       onClick={() => setIsOpen(false)}
     >
-      <div className="relative">
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 hover:p-2.5 rounded-md"
-          aria-label="Close image"
-        >
-          ✕
-        </button>
-
-        <img
-          src={imageUrl}
-          alt={altContent}
-          className="object-contain p-2"
-          onClick={(e) => e.stopPropagation()}
-        />
-      </div>
+      <RotateImage
+        imageUrl={imageUrl}
+        altContent={altContent}
+        setIsOpen={setIsOpen}
+        isPolaroid={false}
+      />
     </div>
   );
 
