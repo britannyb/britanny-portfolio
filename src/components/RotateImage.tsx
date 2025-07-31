@@ -63,7 +63,7 @@ const RotateImage: React.FC<RotateImageProps> = ({
           onClick={(e) => e.stopPropagation()}
         />
         {isPolaroid && (
-          <p className="-mt-1 bg-white text-black pb-6 text-center text-xsm md:text-lg handwritten">
+          <p className="-mt-1 bg-white text-black py-3 text-center text-xsm md:text-lg handwritten">
             {altContent}
           </p>
         )}
