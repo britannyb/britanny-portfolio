@@ -61,7 +61,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
   return (
     <>
       <h3 className="text-center lowercase md:my-4 md:text-sm lg:text-md">
-        ✎ {title}:
+        {title}:
       </h3>
       <div className="flex justify-center">{children}</div>
     </>
