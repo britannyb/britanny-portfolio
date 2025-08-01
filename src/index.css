@@ -240,11 +240,11 @@ h4 {
 }
 
 #toy-gallery div:nth-of-type(even) {
-  transform: rotate(10deg);
+  transform: rotate(8deg);
 }
 
 #toy-gallery div:nth-of-type(odd) {
-  transform: rotate(-5deg);
+  transform: rotate(-4deg);
 }
 
 #drawing-gallery div:nth-of-type(odd) {
@@ -252,7 +252,7 @@ h4 {
 }
 
 #drawing-gallery div:nth-of-type(even) {
-  transform: rotate(-10deg);
+  transform: rotate(-4deg);
 }
 
 #toy-gallery div:nth-of-type(odd):hover,
@@ -337,27 +337,9 @@ h4 {
 }
 
 .dark .dark\:projects-bg-dark {
-  background: linear-gradient(to bottom, #0b0b2c, #1b2735 70%, #090a0f);
-}
-
-.dark .dark\:stars {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  background: #0b0b2c;
-  box-shadow: 2vw 5vh 2px white, 10vw 15vh 2px white, 14vw 20vh 1px white,
-    18vw 25vh 2px white, 22vw 30vh 1px white, 26vw 35vh 2px white,
-    30vw 40vh 1px white, 34vw 45vh 2px white, 38vw 50vh 1px white,
-    42vw 55vh 2px white, 46vw 60vh 1px white, 50vw 65vh 2px white,
-    54vw 70vh 1px white, 62vw 80vh 1px white, 66vw 85vh 2px white,
-    70vw 90vh 1px white, 74vw 95vh 2px white, 78vw 98vh 1px white,
-    86vw 88vh 1px white, 98vw 73vh 2px white, 5vw 68vh 1px white,
-    9vw 63vh 2px white, 13vw 58vh 1px white, 17vw 53vh 2px white,
-    21vw 48vh 1px white, 25vw 43vh 2px white, 29vw 38vh 1px white,
-    33vw 33vh 2px white, 37vw 28vh 1px white, 45vw 18vh 1px white,
-    49vw 13vh 2px white, 53vw 8vh 1px white, 65vw 10vh 2px white,
-    69vw 15vh 1px white, 73vw 20vh 2px white, 77vw 25vh 1px white,
-    81vw 30vh 2px white, 85vw 35vh 1px white;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/projectsBgDark.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .dark .dark\:about-bg-dark {
@@ -381,4 +363,49 @@ h4 {
 
 body {
   overflow-x: hidden !important;
+}
+
+@media (max-width: 1023px) {
+  .stacked-cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .card-caption {
+    width: 100%;
+    max-width: 600px;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 710px) {
+  .card-caption {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .card-caption {
+    max-width: 500px;
+    padding-bottom: 80px;
+  }
+  .card-height {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-caption {
+    max-width: 400px;
+  }
+  .card-height {
+    min-height: 450px;
+  }
+}
+@media (max-width: 360px) {
+  .card-caption {
+    padding-bottom: 40px;
+  }
 }
