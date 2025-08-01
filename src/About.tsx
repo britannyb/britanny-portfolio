@@ -65,7 +65,7 @@ const About = () => {
               <AboutContainer iconType="heart">
                 <p>
                   My previous jobs include being a web developer and web
-                  designer. I have also been a college instructor and taught
+                  designer. I have also been a college instructor who taught
                   subjects such as "Web Technologies", "Data Analytics", and
                   others. My interests mainly include programming, designing,
                   and drawing. I also love playing video games.
