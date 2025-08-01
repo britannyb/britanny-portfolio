@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import ColorPalette from "./ColorPalette";
 import StyledPointer from "./StyledPointer";
 
@@ -8,7 +7,6 @@ interface AppDesignContainerProps {
   urlText?: string;
   paletteColors: string[];
   description: string;
-  children?: ReactNode;
 }
 
 export default function AppDesignContainer({
@@ -17,7 +15,6 @@ export default function AppDesignContainer({
   url,
   paletteColors,
   description,
-  children,
 }: AppDesignContainerProps) {
   return (
     <div className="text-center">

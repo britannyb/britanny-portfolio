@@ -59,6 +59,7 @@ function JournalArticle({ title, url, abstract }: JournalArticleProps) {
             {title}
             <StyledPointer />
           </a>
+          <p>{abstract}</p>
         </div>
       </div>
     </>
