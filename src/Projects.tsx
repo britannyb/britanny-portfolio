@@ -51,7 +51,7 @@ function JournalArticle({ title, url }: JournalArticleProps) {
         <div className="flex items-center space-x-2">
           <Paper />
           <a
-            className="text-white text-sm underline hover:text-pink mb-2"
+            className="text-white text-xsm md:text-sm underline hover:text-pink mb-2"
             href={url}
             target="_blank"
           >
