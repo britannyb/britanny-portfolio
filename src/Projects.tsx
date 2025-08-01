@@ -17,7 +17,6 @@ interface ContainerContentProps {
 
 interface JournalArticleProps {
   title: string;
-  abstract: string;
   url: string;
 }
 
@@ -45,7 +44,7 @@ function ContainerContent({ title, children }: ContainerContentProps) {
   );
 }
 
-function JournalArticle({ title, url, abstract }: JournalArticleProps) {
+function JournalArticle({ title, url }: JournalArticleProps) {
   return (
     <>
       <div className="my-4">
@@ -59,7 +58,6 @@ function JournalArticle({ title, url, abstract }: JournalArticleProps) {
             {title}
             <StyledPointer />
           </a>
-          <p>{abstract}</p>
         </div>
       </div>
     </>
@@ -124,7 +122,6 @@ const Projects = () => {
                 <JournalArticle
                   title="An Overview of the Networking Issues of Cloud Gaming: A Literature
               Review"
-                  abstract="Cloud gaming is poised as the next phase of gaming. However, others argue that it may be far from being practically functional. Since cloud gaming places dependency on networks, new issues emerge. This paper is a review of the networking perspective of cloud gaming. Specifically, the paper analyzes its issues and challenges along with possible solutions."
                   url="http://dx.doi.org/10.35970/jinita.v4i2.1581"
                 />
               </div>
