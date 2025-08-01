@@ -142,8 +142,7 @@ export default function SwipeableStackedCards() {
       onMouseUp={handleDragEnd}
       onMouseLeave={handleDragEnd}
       onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
-      onTouchEnd={handleDragEnd}
-    >
+      onTouchEnd={handleDragEnd}>
       <div className="flex flex-col-reverse justify-center items-center lg:flex-row w-full xl:w-3/4 lg:h-[900px] pt-[20px] md:pt-[10px]">
         <div className="relative min-h-[900px] w-full lg:w-1/2 h-full card-height">
           {cardOrder.map((card, index) => {
@@ -191,11 +190,10 @@ export default function SwipeableStackedCards() {
                   isFront && !isAnimating
                     ? (e) => handleDragStart(e.touches[0].clientX)
                     : undefined
-                }
-              >
+                }>
                 <img
                   src={card.src}
-                  className="max-w-[600px] w-[100%] h-full rounded-lg object-contain hover:scale-105 cursor-pointer select-none"
+                  className="max-w-[600px] w-[100%] h-full object-contain hover:scale-105 cursor-pointer select-none"
                   height="800px"
                   width="600px"
                   draggable={false}
@@ -217,14 +215,12 @@ export default function SwipeableStackedCards() {
           <div className="">
             <div
               className="absolute flex items-center justify-center top-1/2 -left-2 md:left-5 transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-              onClick={handlePrev}
-            >
+              onClick={handlePrev}>
               <Triangle />
             </div>
             <div
               className="absolute flex items-center justify-center top-1/2 -right-2 md:right-5 scale-x-[-1] transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-              onClick={handleNext}
-            >
+              onClick={handleNext}>
               <Triangle />
             </div>
           </div>
