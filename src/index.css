@@ -377,6 +377,7 @@ body {
     width: 100%;
     max-width: 600px;
     min-width: 600px;
+    margin-top: -20px;
   }
 }
 
@@ -389,10 +390,11 @@ body {
 @media (max-width: 650px) {
   .card-caption {
     max-width: 500px;
-    padding-bottom: 80px;
+    margin-top: 20px;
   }
   .card-height {
     min-height: 550px;
+    margin-top: 75px;
   }
 }
 
@@ -405,7 +407,16 @@ body {
   }
 }
 @media (max-width: 360px) {
+  .card-height {
+    margin-top: 30px;
+  }
   .card-caption {
-    padding-bottom: 40px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-caption {
+    margin-top: -30px;
   }
 }
