@@ -6,7 +6,7 @@ const cards = [
   {
     id: 1,
     src: "images/projects/helpCare.png",
-    title: "HelpCare prototype",
+    title: "HelpCare Prototype",
     description:
       "A desktop interface for an application used for online health consultations.",
     url: "https://www.figma.com/file/OblFEXcUSwfGDll900FlOA/HelpCare?type=design&node-id=6:3&mode=design&t=stGJ6g6EvQkPi2pJ-1",
