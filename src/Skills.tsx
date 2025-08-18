@@ -1,5 +1,5 @@
 import Container from "./components/Container";
-import { ReactNode } from "react";
+import { useState, ReactNode } from "react";
 
 interface SkillContainerProps {
   skillTitle: string;
@@ -34,6 +34,11 @@ function SkillLabel({ skillLabel, skillLogo }: SkillLabelProps) {
 }
 
 const Skills = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const handleLoaded = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <div id="skills" className="skills-bg dark:skills-bg-dark main-container">
       <div className="content">
@@ -155,13 +160,24 @@ const Skills = () => {
             <div className="py-16"></div>
           </div>
         </Container>
+        {!isLoaded && (
+          <img
+            id="girl-boxes"
+            className="main-img animate-float"
+            src="images/vrGirl.png"
+            alt="A girl with consoles"
+            height="1248"
+            width="948"
+          />
+        )}
         <img
           id="girl-boxes"
           className="main-img animate-float"
-          src="images/vrGirl.png"
+          src="images/vrGirl.gif"
           alt="A girl with consoles"
           height="1248"
           width="948"
+          onLoad={handleLoaded}
         />
       </div>
     </div>

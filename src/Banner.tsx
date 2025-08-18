@@ -1,6 +1,12 @@
+import { useState } from "react";
 import Bubbles from "./components/Bubbles";
 
 const Banner = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const handleLoaded = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <div
       id="welcome"
@@ -9,12 +15,22 @@ const Banner = () => {
       <Bubbles />
       <div className="content lg:flex lg:flex-row-reverse">
         <div id="girl" className="mb-4">
+          {!isLoaded && (
+            <img
+              className="main-img animate-float"
+              src="images/pinkGirl.png"
+              alt="A girl with accessories"
+              height="600"
+              width="400"
+            />
+          )}
           <img
             className="main-img animate-float"
-            src="images/pinkGirl.png"
+            src="images/pinkGirl.gif"
             alt="A girl with accessories"
             height="600"
             width="400"
+            onLoad={handleLoaded}
           />
           <img
             className="main-img absolute top-0 -right-16 md:-right-40 animate-wiggle"
