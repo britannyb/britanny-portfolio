@@ -34,6 +34,7 @@ export default {
       wiggle: "wiggle 6s ease-in-out infinite",
       float: "float 4s ease-in-out infinite",
       bubble: "fly 10s ease-in-out infinite",
+      circle: "circle 1s ease-in-out infinite",
     },
     keyframes: {
       wiggle: {
@@ -54,6 +55,10 @@ export default {
         "100%": {
           transform: "translateY(0) translateX(0)",
         },
+      },
+      circle: {
+        "0%": { transform: "rotate(0deg)" },
+        "100%": { transform: "rotate(360deg)" },
       },
     },
     extend: {},
