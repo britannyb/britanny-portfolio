@@ -19,6 +19,7 @@ interface ContainerContentProps {
 interface JournalArticleProps {
   title: string;
   url: string;
+  keywords: string[];
 }
 
 function ProjectContainer({ projectTitle, children }: ProjectContainerProps) {
@@ -45,7 +46,17 @@ function ContainerContent({ title, children }: ContainerContentProps) {
   );
 }
 
-function JournalArticle({ title, url }: JournalArticleProps) {
+function JournalArticle({ title, url, keywords }: JournalArticleProps) {
+  const tags = (keywords: string[]) =>
+    keywords.map((word, i) => (
+      <div
+        key={i}
+        className="whitespace-nowrap p-1 bg-trans-black text-white dark:bg-trans-white dark:text-black m-1 rounded-md text-xsm"
+      >
+        <p>{word}</p>
+      </div>
+    ));
+
   return (
     <>
       <div className="my-4">
@@ -53,13 +64,17 @@ function JournalArticle({ title, url }: JournalArticleProps) {
           <div className="w-10">
             <Paper />
           </div>
-          <a
-            className="text-white md:text-sm underline hover:text-pink mb-2"
-            href={url}
-            target="_blank">
-            {title}
-            <StyledPointer />
-          </a>
+          <div>
+            <a
+              className="text-white md:text-sm underline hover:text-pink mb-2"
+              href={url}
+              target="_blank"
+            >
+              {title}
+              <StyledPointer />
+            </a>
+            <div className="flex flex-wrap items-center">{tags(keywords)}</div>
+          </div>
         </div>
       </div>
     </>
@@ -70,7 +85,8 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="projects-bg dark:projects-bg-dark main-container text-white">
+      className="projects-bg dark:projects-bg-dark main-container text-white"
+    >
       <div className="content">
         <Container title="PROJECTS">
           <ProjectContainer projectTitle="Sample Work">
@@ -83,7 +99,8 @@ const Projects = () => {
               <ContainerContent>
                 <div
                   id="drawing-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4">
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
+                >
                   <DrawingModal
                     imageUrl="images/drawing1.jpg"
                     altContent="Dogs art"
@@ -103,7 +120,8 @@ const Projects = () => {
               <ContainerContent>
                 <div
                   id="toy-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4">
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
+                >
                   <ImageModal
                     imageUrl="images/toy1.jpg"
                     altContent="J. Silverhand"
@@ -122,6 +140,7 @@ const Projects = () => {
                   title="An Overview of the Networking Issues of Cloud Gaming: A Literature
               Review"
                   url="http://dx.doi.org/10.35970/jinita.v4i2.1581"
+                  keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
               </div>
             </ProjectContainer>
