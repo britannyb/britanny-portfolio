@@ -73,7 +73,7 @@ const About = () => {
               </AboutContainer>
               <br />
               <AboutContainer iconType="pencil">
-                <p className="pb-2">See more of my projects:</p>
+                <p className="pb-2">See more:</p>
                 <div className="grid sm:grid-cols-2 gap-2 md:w-96">
                   <div>
                     <a
