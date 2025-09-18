@@ -26,7 +26,7 @@ const Navigation = () => {
   };
   return (
     <div className="fixed left-0 top-0 w-full z-40 navigation rounded-b-lg">
-      <div className="flex items-center bg-white dark:bg-teal bg-opacity-50 dark:bg-opacity-10 backdrop-blur-xl px-6 py-2 rounded-b-lg">
+      <div className="flex items-center bg-white dark:bg-teal bg-opacity-40 dark:bg-opacity-10 backdrop-blur-xl px-6 py-2 rounded-b-lg">
         <div className="mr-16">
           <img
             src="images/logoPink.png"
@@ -86,8 +86,7 @@ const Navigation = () => {
       </div>
       <div
         id="toggle-button"
-        className="absolute hover:scale-110 right-4 top-0 py-3"
-      >
+        className="absolute hover:scale-110 right-4 top-0 py-3">
         <button id="theme-toggle" type="button" onClick={toggleTheme}>
           <div className="inline dark:hidden">
             <div id="dark-toggle"></div>

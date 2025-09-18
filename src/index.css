@@ -130,6 +130,10 @@
   padding: 20px;
 }
 
+.border-outset {
+  border-style: outset !important;
+}
+
 .content {
   max-width: 1800px;
   margin: auto;
