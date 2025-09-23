@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Bubbles from "./components/Bubbles";
 import RotateImage from "./components/RotateImage";
 
