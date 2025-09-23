@@ -4,8 +4,9 @@ interface RotateImageProps {
   imageUrl: string;
   altContent: string;
   alt?: string;
-  isPolaroid: boolean;
-  setIsOpen: (open: boolean) => void;
+  isPolaroid?: boolean;
+  setIsOpen?: (open: boolean) => void;
+  className?: string;
 }
 
 const RotateImage: React.FC<RotateImageProps> = ({
@@ -13,6 +14,7 @@ const RotateImage: React.FC<RotateImageProps> = ({
   altContent,
   isPolaroid,
   setIsOpen,
+  className,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -45,29 +47,37 @@ const RotateImage: React.FC<RotateImageProps> = ({
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="transition-transform duration-300 ease-out inline-block m-2"
-    >
-      <div className="relative m-2 md:m-0">
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 hover:p-2.5 rounded-md"
-          aria-label="Close image"
-        >
-          ✕
-        </button>
-
+      className="transition-transform duration-300 ease-out inline-block m-2">
+      {!setIsOpen && (
         <img
           src={imageUrl}
           alt={altContent}
-          className="bg-white p-1 object-contain"
           onClick={(e) => e.stopPropagation()}
+          className={className}
         />
-        {isPolaroid && (
-          <p className="-mt-1 bg-white text-black py-3 text-center text-xsm md:text-lg handwritten">
-            {altContent}
-          </p>
-        )}
-      </div>
+      )}
+      {setIsOpen && (
+        <div className="relative m-2 md:m-0">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 hover:p-2.5 rounded-md"
+            aria-label="Close image">
+            ✕
+          </button>
+
+          <img
+            src={imageUrl}
+            alt={altContent}
+            className="bg-white p-1 object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+          {isPolaroid && (
+            <p className="-mt-1 bg-white text-black py-3 text-center text-xsm md:text-lg handwritten">
+              {altContent}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 };
