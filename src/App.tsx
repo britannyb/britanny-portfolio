@@ -11,8 +11,8 @@ function App() {
     <div>
       <div>
         <Banner />
-        <Skills />
         <Projects />
+        <Skills />
         <About />
       </div>
       <div className="hidden md:inline">
