@@ -65,22 +65,22 @@ const BottomNavigation = () => {
                 </Link>
               </li>
               <li>
-                <Link activeClass="active" smooth spy to="skills">
-                  <div className="skills-icon">
-                    <SkillsIcon />
-                  </div>
-                  <span className="cursor-pointer text-teal dark:text-white hover:text-dark-pink dark:hover:text-pink">
-                    skills
-                  </span>
-                </Link>
-              </li>
-              <li>
                 <Link activeClass="active" smooth spy to="projects">
                   <div className="projects-icon">
                     <ProjectsIcon />
                   </div>
                   <span className="cursor-pointer text-teal dark:text-white hover:text-dark-pink dark:hover:text-pink">
                     projects
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="skills">
+                  <div className="skills-icon">
+                    <SkillsIcon />
+                  </div>
+                  <span className="cursor-pointer text-teal dark:text-white hover:text-dark-pink dark:hover:text-pink">
+                    skills
                   </span>
                 </Link>
               </li>
