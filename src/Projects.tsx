@@ -137,6 +137,16 @@ const Projects = () => {
                   url="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
                   keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
+                <JournalArticle
+                  title="(Adviser) Crop Suitability Recommendation Based on Soil Parameters and Environmental Factors with Gradient Boosting Trees and Random Forest Algorithm"
+                  url="https://atiftap.org/s/JGB-19315.pdf"
+                  keywords={[
+                    "machine learning",
+                    "random forest",
+                    "gradient boosting",
+                    "crop suitability",
+                  ]}
+                />
               </div>
             </ProjectContainer>
           </Container>
