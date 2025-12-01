@@ -31,12 +31,7 @@ const BottomNavigation = () => {
           <img
             src="images/logoPink.png"
             alt="Britanny Portfolio Website Logo"
-            className="w-10 inline dark:hidden"
-          />
-          <img
-            src="images/logoYellow.png"
-            alt="Britanny Portfolio Website Logo"
-            className="w-10 hidden dark:inline"
+            className="w-10 inline"
           />
         </div>
         <div id="toggle-button">
