@@ -341,7 +341,7 @@ h4 {
 }
 
 .dark .dark\:projects-bg-dark {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("/images/projectsBgDark.jpg") no-repeat center -500px;
   background-size: cover;
 }

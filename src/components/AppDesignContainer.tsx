@@ -19,13 +19,15 @@ export default function AppDesignContainer({
   return (
     <div className="text-center">
       <div className="lg:min-w-[400px] lg:w-full rounded-lg p-6 bg-black bg-opacity-40 backdrop-blur-xl card-caption">
-        <img
-          className="w-32 md:w-64 py-4 centered-image"
-          src={logoLink}
-          alt="Project Logo"
-          height="200"
-          width="200"
-        />
+        <a href={url} target="_blank">
+          <img
+            className="w-32 md:w-64 py-4 centered-image transition-transform transform hover:scale-105"
+            src={logoLink}
+            alt="Project Logo"
+            height="200"
+            width="200"
+          />
+        </a>
         <div className="items-center centered-image">
           <ColorPalette colors={paletteColors} />
         </div>

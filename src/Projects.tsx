@@ -51,7 +51,8 @@ function JournalArticle({ title, url, keywords }: JournalArticleProps) {
     keywords.map((word, i) => (
       <div
         key={i}
-        className="whitespace-nowrap p-1 bg-trans-black text-white dark:bg-trans-white dark:text-black m-1 rounded-md text-xsm">
+        className="whitespace-nowrap p-1 bg-trans-black text-white dark:bg-teal m-1 rounded-md text-xsm"
+      >
         <p>{word}</p>
       </div>
     ));
@@ -67,7 +68,8 @@ function JournalArticle({ title, url, keywords }: JournalArticleProps) {
             <a
               className="text-white md:text-sm underline hover:text-pink mb-2"
               href={url}
-              target="_blank">
+              target="_blank"
+            >
               {title}
               <StyledPointer />
             </a>
@@ -83,7 +85,8 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="projects-bg dark:projects-bg-dark main-container text-white">
+      className="projects-bg dark:projects-bg-dark main-container text-white"
+    >
       <div className="content">
         <Container title="PROJECTS">
           <ProjectContainer projectTitle="Sample Work">
@@ -96,7 +99,8 @@ const Projects = () => {
               <ContainerContent>
                 <div
                   id="drawing-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4">
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
+                >
                   <DrawingModal
                     imageUrl="images/drawing1.jpg"
                     altContent="Dogs art"
@@ -116,7 +120,8 @@ const Projects = () => {
               <ContainerContent>
                 <div
                   id="toy-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4">
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
+                >
                   <ImageModal
                     imageUrl="images/toy1.jpg"
                     altContent="J. Silverhand"
