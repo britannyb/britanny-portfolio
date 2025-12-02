@@ -27,6 +27,16 @@ const cards = [
   },
   {
     id: 3,
+    src: "images/projects/restInPaws.png",
+    title: "Rest in Paws Design",
+    description:
+      "A simple animal memorialization webpage design. It was developed to demonstrate client and server side scripts.",
+    url: "https://www.figma.com/design/8dMUKVdnJbOF0bIyrHIcsT/petMemorial?node-id=0-1&t=SpWqvSzaZZwFY9je-1",
+    palette: ["405D72", "758694", "F7E7DC", "FFF8F3"],
+    logo: "images/projects/restInPawsLogo.png",
+  },
+  {
+    id: 4,
     src: "images/projects/vaccineHelp.png",
     title: "VaccineHelp Design",
     description:
@@ -36,7 +46,7 @@ const cards = [
     logo: "images/projects/vaccineHelpLogo.png",
   },
   {
-    id: 4,
+    id: 5,
     src: "images/projects/portfolio2.png",
     title: "Portfolio (Alt.)",
     description:
@@ -46,7 +56,7 @@ const cards = [
     logo: "images/projects/portfolio2Logo.png",
   },
   {
-    id: 5,
+    id: 6,
     src: "images/projects/portfolio1.png",
     title: "Portfolio v1",
     description:
@@ -56,7 +66,7 @@ const cards = [
     logo: "images/projects/portfolio1Logo.png",
   },
   {
-    id: 6,
+    id: 7,
     src: "images/projects/fuwaNeko.png",
     title: "Fuwa Neko",
     description:
@@ -144,8 +154,7 @@ export default function SwipeableStackedCards() {
       onMouseUp={handleDragEnd}
       onMouseLeave={handleDragEnd}
       onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
-      onTouchEnd={handleDragEnd}
-    >
+      onTouchEnd={handleDragEnd}>
       <div className="flex flex-col justify-center items-center lg:flex-row w-full xl:w-3/4 lg:h-[900px] pt-[20px] md:pt-[10px]">
         <div className="relative min-h-[900px] w-full lg:w-1/2 h-full card-height">
           {cardOrder.map((card, index) => {
@@ -193,8 +202,7 @@ export default function SwipeableStackedCards() {
                   isFront && !isAnimating
                     ? (e) => handleDragStart(e.touches[0].clientX)
                     : undefined
-                }
-              >
+                }>
                 <img
                   src={card.src}
                   className="max-w-[600px] w-[100%] h-full object-contain hover:scale-105 cursor-pointer select-none"
@@ -220,14 +228,12 @@ export default function SwipeableStackedCards() {
             <div className="">
               <div
                 className="absolute flex items-center justify-center top-1/2 -left-2 md:left-5 transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-                onClick={handlePrev}
-              >
+                onClick={handlePrev}>
                 <Triangle />
               </div>
               <div
                 className="absolute flex items-center justify-center top-1/2 -right-2 md:right-5 scale-x-[-1] transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-                onClick={handleNext}
-              >
+                onClick={handleNext}>
                 <Triangle />
               </div>
             </div>
