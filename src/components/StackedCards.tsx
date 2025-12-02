@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import AppDesignContainer from "./AppDesignContainer";
 import Triangle from "./Triangle";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const cards = [
   {
@@ -142,7 +144,8 @@ export default function SwipeableStackedCards() {
       onMouseUp={handleDragEnd}
       onMouseLeave={handleDragEnd}
       onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
-      onTouchEnd={handleDragEnd}>
+      onTouchEnd={handleDragEnd}
+    >
       <div className="flex flex-col justify-center items-center lg:flex-row w-full xl:w-3/4 lg:h-[900px] pt-[20px] md:pt-[10px]">
         <div className="relative min-h-[900px] w-full lg:w-1/2 h-full card-height">
           {cardOrder.map((card, index) => {
@@ -190,7 +193,8 @@ export default function SwipeableStackedCards() {
                   isFront && !isAnimating
                     ? (e) => handleDragStart(e.touches[0].clientX)
                     : undefined
-                }>
+                }
+              >
                 <img
                   src={card.src}
                   className="max-w-[600px] w-[100%] h-full object-contain hover:scale-105 cursor-pointer select-none"
@@ -205,25 +209,29 @@ export default function SwipeableStackedCards() {
         </div>
 
         <div className="relative w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:p-8">
-          <AppDesignContainer
-            logoLink={frontCard.logo}
-            url={frontCard.url}
-            urlText={frontCard.title}
-            paletteColors={frontCard.palette}
-            description={frontCard.description}
-          />
-          <div className="">
-            <div
-              className="absolute flex items-center justify-center top-1/2 -left-2 md:left-5 transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-              onClick={handlePrev}>
-              <Triangle />
+          <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+            <AppDesignContainer
+              logoLink={frontCard.logo}
+              url={frontCard.url}
+              urlText={frontCard.title}
+              paletteColors={frontCard.palette}
+              description={frontCard.description}
+            />
+            <div className="">
+              <div
+                className="absolute flex items-center justify-center top-1/2 -left-2 md:left-5 transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
+                onClick={handlePrev}
+              >
+                <Triangle />
+              </div>
+              <div
+                className="absolute flex items-center justify-center top-1/2 -right-2 md:right-5 scale-x-[-1] transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
+                onClick={handleNext}
+              >
+                <Triangle />
+              </div>
             </div>
-            <div
-              className="absolute flex items-center justify-center top-1/2 -right-2 md:right-5 scale-x-[-1] transform -translate-y-1/2 bg-dark-pink hover:bg-teal dark:bg-teal dark:hover:bg-dark-pink w-10 h-10 cursor-pointer rounded-full"
-              onClick={handleNext}>
-              <Triangle />
-            </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </div>

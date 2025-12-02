@@ -2,6 +2,8 @@ import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
 import Glass from "./Glass";
 import RotateImage from "./RotateImage";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 interface ImageModal {
   imageUrl: string;
@@ -34,29 +36,31 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
 
   return (
     <div className="p-4">
-      <div className="drawing relative">
-        <div className="drawing-folder"></div>
-        <div className="drawing-paper shadow-2xl"></div>
-        <img
-          src={imageUrl}
-          alt={altContent}
-          className="bg-white border border-white border-2 shadow-2xl rounded-sm overflow-hidden cursor-pointer"
-          onClick={() => setIsOpen(true)}
-        />
-        <div
-          id="zoom"
-          className="fixed bottom-2 left-2 md:bottom-1 md:left-1 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
-          onClick={() => setIsOpen(true)}
-        >
-          <Glass />
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <div className="drawing relative">
+          <div className="drawing-folder"></div>
+          <div className="drawing-paper shadow-2xl"></div>
+          <img
+            src={imageUrl}
+            alt={altContent}
+            className="bg-white border border-white border-2 shadow-2xl rounded-sm overflow-hidden cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          />
+          <div
+            id="zoom"
+            className="fixed bottom-2 left-2 md:bottom-1 md:left-1 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
+            onClick={() => setIsOpen(true)}
+          >
+            <Glass />
+          </div>
         </div>
-      </div>
 
-      {isOpen && (
-        <div className="p-4">
-          {isOpen && ReactDOM.createPortal(modal, document.body)}
-        </div>
-      )}
+        {isOpen && (
+          <div className="p-4">
+            {isOpen && ReactDOM.createPortal(modal, document.body)}
+          </div>
+        )}
+      </ScrollAnimation>
     </div>
   );
 };

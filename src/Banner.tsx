@@ -5,7 +5,8 @@ const Banner = () => {
   return (
     <div
       id="welcome"
-      className="welcome-bg dark:welcome-bg-dark relative overflow-x-hidden main-container py-16">
+      className="welcome-bg dark:welcome-bg-dark relative overflow-x-hidden main-container py-16"
+    >
       <Bubbles />
       <div className="content lg:flex lg:flex-row-reverse">
         <div id="girl" className="mb-4">
@@ -30,7 +31,8 @@ const Banner = () => {
             </p>
             <p
               id="name"
-              className="text-white text-2xl md:text-3xl xl:text-4xl">
+              className="text-white text-2xl md:text-3xl xl:text-4xl"
+            >
               Britanny
             </p>
           </div>

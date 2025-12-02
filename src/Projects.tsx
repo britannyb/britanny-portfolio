@@ -5,6 +5,8 @@ import ImageModal from "./components/ImageModal";
 import DrawingModal from "./components/DrawingModal";
 import Paper from "./components/Paper";
 import StackedCards from "./components/StackedCards";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 interface ProjectContainerProps {
   projectTitle: string;
@@ -25,10 +27,12 @@ interface JournalArticleProps {
 function ProjectContainer({ projectTitle, children }: ProjectContainerProps) {
   return (
     <>
-      <h2 className="text-pink dark:text-white text-sm md:text-md pink-title my-2 md:my-6">
-        {projectTitle}
-      </h2>
-      <div>{children}</div>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <h2 className="text-pink dark:text-white text-sm md:text-md pink-title my-2 md:my-6">
+          {projectTitle}
+        </h2>
+        <div>{children}</div>
+      </ScrollAnimation>
     </>
   );
 }
@@ -60,22 +64,26 @@ function JournalArticle({ title, url, keywords }: JournalArticleProps) {
   return (
     <>
       <div className="my-4">
-        <div className="flex items-center space-x-2">
-          <div className="w-10">
-            <Paper />
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+          <div className="flex items-center space-x-2">
+            <div className="w-10">
+              <Paper />
+            </div>
+            <div>
+              <a
+                className="text-white md:text-sm underline hover:text-pink mb-2"
+                href={url}
+                target="_blank"
+              >
+                {title}
+                <StyledPointer />
+              </a>
+              <div className="flex flex-wrap items-center">
+                {tags(keywords)}
+              </div>
+            </div>
           </div>
-          <div>
-            <a
-              className="text-white md:text-sm underline hover:text-pink mb-2"
-              href={url}
-              target="_blank"
-            >
-              {title}
-              <StyledPointer />
-            </a>
-            <div className="flex flex-wrap items-center">{tags(keywords)}</div>
-          </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </>
   );

@@ -4,6 +4,8 @@ import MagnifyingGlass from "./components/MagnifyingGlass";
 import Pencil from "./components/Pencil";
 import { ReactNode } from "react";
 import StyledPointer from "./components/StyledPointer";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const About = () => {
   interface AboutContainerProps {
@@ -22,10 +24,12 @@ const About = () => {
     }
     return (
       <>
-        <div className="flex space-x-4 items-center">
-          <div className="md:w-16">{containerIcon}</div>
-          <div className="w-full">{children}</div>
-        </div>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+          <div className="flex space-x-4 items-center">
+            <div className="md:w-16">{containerIcon}</div>
+            <div className="w-full">{children}</div>
+          </div>
+        </ScrollAnimation>
       </>
     );
   }
@@ -38,20 +42,24 @@ const About = () => {
       <div className="content text-white">
         <Container title="ABOUT">
           <div className="lg:flex lg:space-x-11 items-center">
-            <div className="pic-container">
-              <div className="picture-shadow"></div>
-              <div className="picture-frame"></div>
-              <img
-                src="images/me.jpg"
-                alt="A picture of me"
-                height="720"
-                width="576"
-              />
-            </div>
+            <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+              <div className="pic-container">
+                <div className="picture-shadow"></div>
+                <div className="picture-frame"></div>
+                <img
+                  src="images/me.jpg"
+                  alt="A picture of me"
+                  height="720"
+                  width="576"
+                />
+              </div>
+            </ScrollAnimation>
             <div className="pt-6 md:pt-0">
-              <h4 className="text-white text-md md:text-xl lg:text-2xl">
-                Britanny B
-              </h4>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+                <h4 className="text-white text-md md:text-xl lg:text-2xl">
+                  Britanny B
+                </h4>
+              </ScrollAnimation>
               <br />
               <AboutContainer iconType="magnify">
                 <p>
@@ -116,32 +124,36 @@ const About = () => {
         <div className="mt-20">
           <Container title="SOURCES">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <div>
-                <p>background images: </p>
-                <a
-                  href="https://www.pexels.com/@mo-eid-1268975/"
-                  target="_blank"
-                  className="text-white break-words hover:text-pink"
-                >
-                  <h4 className="text-sm md:text-md">
-                    Mo Eid @ Pexels
-                    <StyledPointer />
-                  </h4>
-                </a>
-              </div>
-              <div>
-                <p>content icons: </p>
-                <a
-                  href="https://www.iconfinder.com/iconsets/line-basic-ecommerce"
-                  target="_blank"
-                  className="text-white break-words hover:text-pink"
-                >
-                  <h4 className="text-sm md:text-md">
-                    Nikita Grachev @ Iconfinder
-                    <StyledPointer />
-                  </h4>
-                </a>
-              </div>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+                <div>
+                  <p>background images: </p>
+                  <a
+                    href="https://www.pexels.com/@mo-eid-1268975/"
+                    target="_blank"
+                    className="text-white break-words hover:text-pink"
+                  >
+                    <h4 className="text-sm md:text-md">
+                      Mo Eid @ Pexels
+                      <StyledPointer />
+                    </h4>
+                  </a>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+                <div>
+                  <p>content icons: </p>
+                  <a
+                    href="https://www.iconfinder.com/iconsets/line-basic-ecommerce"
+                    target="_blank"
+                    className="text-white break-words hover:text-pink"
+                  >
+                    <h4 className="text-sm md:text-md">
+                      Nikita Grachev @ Iconfinder
+                      <StyledPointer />
+                    </h4>
+                  </a>
+                </div>
+              </ScrollAnimation>
             </div>
           </Container>
         </div>

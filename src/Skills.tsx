@@ -1,6 +1,8 @@
 import Container from "./components/Container";
 import { ReactNode } from "react";
 import RotateImage from "./components/RotateImage";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 interface SkillContainerProps {
   skillTitle: string;
@@ -15,10 +17,12 @@ interface SkillLabelProps {
 function SkillContainer({ skillTitle, children }: SkillContainerProps) {
   return (
     <>
-      <h2 className="text-pink dark:text-white text-sm md:text-md pink-title">
-        {skillTitle}
-      </h2>
-      <div className="flex flex-wrap">{children}</div>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <h2 className="text-pink dark:text-white text-sm md:text-md pink-title">
+          {skillTitle}
+        </h2>
+        <div className="flex flex-wrap">{children}</div>
+      </ScrollAnimation>
     </>
   );
 }
@@ -157,12 +161,14 @@ const Skills = () => {
           </div>
         </Container>
         <div className="relative flex justify-center">
-          <RotateImage
-            imageUrl={"images/vrGirl.gif"}
-            altContent={"A girl with consoles"}
-            isPolaroid={false}
-            className={"girl-boxes main-img animate-float"}
-          />
+          <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+            <RotateImage
+              imageUrl={"images/vrGirl.gif"}
+              altContent={"A girl with consoles"}
+              isPolaroid={false}
+              className={"girl-boxes main-img animate-float"}
+            />
+          </ScrollAnimation>
         </div>
       </div>
     </div>
