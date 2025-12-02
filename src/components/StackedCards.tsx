@@ -38,7 +38,7 @@ const cards = [
     src: "images/projects/portfolio2.png",
     title: "Portfolio (Alt.)",
     description:
-      "An alternative version of my portfolio website with drawings made in Proreate. It was developed with React and TailwindCSS.",
+      "An alternative version of my portfolio website with drawings made in Procreate. It was developed with React and TailwindCSS.",
     url: "https://britannyb-portfolio.vercel.app/",
     palette: ["FFFFFF", "E77B83", "8DA960", "414040"],
     logo: "images/projects/portfolio2Logo.png",
