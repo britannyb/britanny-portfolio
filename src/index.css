@@ -304,10 +304,6 @@ h4 {
   z-index: -1;
 }
 
-#welcome {
-  min-height: 100%;
-}
-
 .welcome-bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/homeTopBg.jpg") no-repeat center center;
