@@ -147,7 +147,7 @@ const Projects = () => {
                 <JournalArticle
                   title="An Overview of the Networking Issues of Cloud Gaming: A Literature
               Review"
-                  url="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
+                  url="https://doi.org/10.35970/jinita.v4i2.1581"
                   keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
                 <JournalArticle
