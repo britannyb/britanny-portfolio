@@ -82,7 +82,23 @@ const About = () => {
               <br />
               <AboutContainer iconType="pencil">
                 <p className="pb-2">See more:</p>
-                <div className="grid sm:grid-cols-2 gap-2 md:w-96">
+                <div className="grid sm:grid-cols-3 gap-1 md:w-[700px]">
+                  <div>
+                    <a
+                      className="text-white hover:text-pink flex items-center"
+                      href="https://www.researchgate.net/profile/Britanny_Baldovino"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/researchGateLogo.png"
+                        alt="ResearchGate Icon"
+                        height="40"
+                        width="40"
+                        className="mr-2 hover:scale-125"
+                      />
+                      ResearchGate: Britanny
+                    </a>
+                  </div>
                   <div>
                     <a
                       className="text-white hover:text-pink flex items-center"
