@@ -151,7 +151,7 @@ const Projects = () => {
                   keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
                 <JournalArticle
-                  title="Crop Suitability Recommendation Based on Soil Parameters and Environmental Factors with Gradient Boosting Trees and Random Forest Algorithm"
+                  title="Crop Suitability Recommendation Based on Soil Parameters & Environmental Factors with Gradient Boosting Trees & Random Forest Algorithm"
                   url="https://atiftap.org/s/JGB-19315.pdf"
                   keywords={[
                     "machine learning",
