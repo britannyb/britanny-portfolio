@@ -148,12 +148,16 @@ const Skills = () => {
             <div>
               <SkillContainer skillTitle="Productivity Tools">
                 <SkillLabel
-                  skillLabel="Office"
+                  skillLabel="Microsoft Office"
                   skillLogo="images/skills/microsoftOfficeLogo.png"
                 />
                 <SkillLabel
-                  skillLabel="iWork"
+                  skillLabel="Apple iWork"
                   skillLogo="images/skills/appleIworkLogo.png"
+                />
+                <SkillLabel
+                  skillLabel="Google Workspace"
+                  skillLogo="images/skills/googleWorkspaceLogo.png"
                 />
               </SkillContainer>
             </div>
