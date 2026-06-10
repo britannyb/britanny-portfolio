@@ -161,12 +161,17 @@ const Projects = () => {
             <ProjectContainer projectTitle="Journal Articles">
               <div>
                 <JournalArticle
-                  title="An Overview of the Networking Issues of Cloud Gaming: A Literature
-              Review"
-                  url="https://doi.org/10.35970/jinita.v4i2.1581"
+                  title="MotivEat: A Web-Based Meal Planning Application with Ingredient Recognition for Personalized Nutritional Guidance"
+                  url="https://journals.telkomuniversity.ac.id/ijait/article/view/8134"
                   date="01/27/2026"
                   journal="International Journal of Applied Information Technology (IJAIT)"
-                  keywords={["cloud gaming", "wireless networks", "networks"]}
+                  keywords={[
+                    "machine learning",
+                    "object detection",
+                    "tensorflow",
+                    "meal planner",
+                    "web application",
+                  ]}
                 />
                 <JournalArticle
                   title="Crop Suitability Recommendation Based on Soil Parameters & Environmental Factors with Gradient Boosting Trees & Random Forest Algorithm"
@@ -181,17 +186,12 @@ const Projects = () => {
                   ]}
                 />
                 <JournalArticle
-                  title="MotivEat: A Web-Based Meal Planning Application with Ingredient Recognition for Personalized Nutritional Guidance"
-                  url="https://journals.telkomuniversity.ac.id/ijait/article/view/8134"
+                  title="An Overview of the Networking Issues of Cloud Gaming: A Literature
+              Review"
+                  url="https://doi.org/10.35970/jinita.v4i2.1581"
                   date="12/30/2022"
                   journal="Journal of Innovation Information Technology and Application (JINITA)"
-                  keywords={[
-                    "machine learning",
-                    "object detection",
-                    "tensorflow",
-                    "meal planner",
-                    "web application",
-                  ]}
+                  keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
               </div>
             </ProjectContainer>
