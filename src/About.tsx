@@ -57,7 +57,7 @@ const About = () => {
             <div className="pt-6 md:pt-0">
               <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                 <h4 className="text-white text-md md:text-xl lg:text-2xl">
-                  Britanny B
+                  Britanny B.
                 </h4>
               </ScrollAnimation>
               <br />
@@ -96,7 +96,7 @@ const About = () => {
                         width="40"
                         className="mr-2 hover:scale-125"
                       />
-                      ResearchGate: Britanny
+                      ResearchGate: Britanny B.
                     </a>
                   </div>
                   <div>
@@ -139,7 +139,7 @@ const About = () => {
         <br />
         <div className="mt-20">
           <Container title="SOURCES">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
               <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                 <div>
                   <p>background images: </p>
@@ -149,7 +149,7 @@ const About = () => {
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Mo Eid @ Pexels
+                      Mo E. @ Pexels
                       <StyledPointer />
                     </h4>
                   </a>
@@ -164,7 +164,22 @@ const About = () => {
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Nikita Grachev @ Iconfinder
+                      Nikita G @ Iconfinder
+                      <StyledPointer />
+                    </h4>
+                  </a>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+                <div>
+                  <p>other icons: </p>
+                  <a
+                    href="https://www.figma.com/community/file/1338874647594114673"
+                    target="_blank"
+                    className="text-white break-words hover:text-pink"
+                  >
+                    <h4 className="text-sm md:text-md">
+                      Streamline
                       <StyledPointer />
                     </h4>
                   </a>
