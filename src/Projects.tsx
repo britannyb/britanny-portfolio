@@ -119,7 +119,7 @@ const Projects = () => {
                   />
                   <DrawingModal
                     imageUrl="images/drawing3.jpg"
-                    altContent="Cyberpunk 2077 Alt fan art"
+                    altContent="Fallout fan art"
                   />
                 </div>
               </ContainerContent>
@@ -138,7 +138,10 @@ const Projects = () => {
                     imageUrl="images/toy2.jpg"
                     altContent="M. Nakano"
                   />
-                  <ImageModal imageUrl="images/toy3.jpg" altContent="Fallout" />
+                  <ImageModal
+                    imageUrl="images/toy3.jpg"
+                    altContent="Wong & Wick"
+                  />
                 </div>
               </ContainerContent>
             </ProjectContainer>
