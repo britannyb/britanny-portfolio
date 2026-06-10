@@ -74,9 +74,10 @@ const About = () => {
                 <p>
                   My previous jobs include being a web developer and web
                   designer. I have also been a college instructor who taught
-                  subjects such as "Web Technologies", "Data Analytics", and
-                  others. My interests mainly include programming, designing,
-                  and drawing. I also love playing video games.
+                  subjects such as "Web Technologies", "Data Analytics",
+                  "Information Management" and others. My interests mainly
+                  include programming, designing, and drawing. I also love
+                  playing video games.
                 </p>
               </AboutContainer>
               <br />
