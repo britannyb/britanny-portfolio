@@ -150,7 +150,7 @@ const About = () => {
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Mo E. @ Pexels
+                      Mo @ Pexels
                       <StyledPointer />
                     </h4>
                   </a>
@@ -165,7 +165,7 @@ const About = () => {
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Nikita G. @ Iconfinder
+                      Nikita @ Iconfinder
                       <StyledPointer />
                     </h4>
                   </a>
