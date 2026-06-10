@@ -165,7 +165,7 @@ const About = () => {
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Nikita G @ Iconfinder
+                      Nikita G. @ Iconfinder
                       <StyledPointer />
                     </h4>
                   </a>
