@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 import StyledPointer from "./components/StyledPointer";
 import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import MeIcon from "./components/MeIcon";
 
 const About = () => {
   interface AboutContainerProps {
@@ -190,8 +191,8 @@ const About = () => {
           </Container>
         </div>
       </div>
-      <div className="text-white bg-dark-trans-black p-4 text-right">
-        <p>✎ created by Britanny B</p>
+      <div className="text-white flex items-center gap-1 justify-end bg-dark-trans-black p-4 text-right">
+        <p>✎ created by Britanny B.</p> {<MeIcon />}
       </div>
     </div>
   );
