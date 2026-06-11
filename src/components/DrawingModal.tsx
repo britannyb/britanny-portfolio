@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
-import Glass from "./Glass";
 import RotateImage from "./RotateImage";
 import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import Glass from "./Glass";
 
 interface ImageModal {
   imageUrl: string;
@@ -48,7 +48,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
           />
           <div
             id="zoom"
-            className="fixed bottom-2 left-2 md:bottom-1 md:left-1 bg-trans-black rounded-lg cursor-pointer p-2 hover:p-2.5 md:p-3 md:hover:p-3.5"
+            className="fixed bottom-3 left-3 md:bottom-2 md:left-2 bg-trans-black rounded-lg cursor-pointer p-1.5 hover:p-2 md:p-2 md:hover:p-2.5"
             onClick={() => setIsOpen(true)}
           >
             <Glass />

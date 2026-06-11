@@ -47,7 +47,8 @@ const RotateImage: React.FC<RotateImageProps> = ({
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="transition-transform duration-300 ease-out inline-block m-2">
+      className="transition-transform duration-300 ease-out inline-block m-2"
+    >
       {!setIsOpen && (
         <img
           src={imageUrl}
@@ -60,8 +61,9 @@ const RotateImage: React.FC<RotateImageProps> = ({
         <div className="relative m-2 md:m-0">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-2 right-2 text-white bg-trans-black p-2 m-2 hover:p-2.5 rounded-md"
-            aria-label="Close image">
+            className="absolute top-2 right-2 text-white bg-trans-black w-8 h-8 md:w-9 md:h-9 m-2 hover:w-9 hover:h-9 md:hover:w-10 md:hover:h-10 rounded-full"
+            aria-label="Close image"
+          >
             ✕
           </button>
 
