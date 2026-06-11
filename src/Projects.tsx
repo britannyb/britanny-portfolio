@@ -116,7 +116,7 @@ const Projects = () => {
         </Container>
         <div className="mt-20">
           <Container title="MISC.">
-            <ProjectContainer projectTitle="Digital Art (Procreate)">
+            <ProjectContainer projectTitle="Digital Art">
               <ContainerContent>
                 <div
                   id="drawing-gallery"
