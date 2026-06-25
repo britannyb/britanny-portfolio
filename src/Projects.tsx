@@ -153,6 +153,7 @@ const Projects = () => {
                 />
               </div>
             </ProjectContainer>
+            <br />
             <ProjectContainer projectTitle="Photography">
               <ContainerContent>
                 <div
@@ -174,6 +175,7 @@ const Projects = () => {
                 </div>
               </ContainerContent>
             </ProjectContainer>
+            <br />
             <ProjectContainer projectTitle="Digital Art">
               <ContainerContent>
                 <div
