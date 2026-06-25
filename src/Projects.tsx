@@ -63,7 +63,7 @@ function JournalArticle({
     keywords.map((word, i) => (
       <div
         key={i}
-        className="whitespace-nowrap p-1 bg-trans-black text-white dark:bg-teal m-1 rounded-md text-xsm"
+        className="whitespace-nowrap p-1 text-white bg-teal dark:bg-trans-black m-1 rounded-md text-xsm"
       >
         <p>{word}</p>
       </div>
