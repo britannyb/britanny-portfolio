@@ -116,27 +116,6 @@ const Projects = () => {
         </Container>
         <div className="mt-20">
           <Container title="MISC.">
-            <ProjectContainer projectTitle="Photography">
-              <ContainerContent>
-                <div
-                  id="photo-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
-                >
-                  <ImageModal
-                    imageUrl="images/photo1.jpg"
-                    altContent="Horizon Zero Dawn"
-                  />
-                  <ImageModal
-                    imageUrl="images/photo2.jpg"
-                    altContent="Hirono Tree"
-                  />
-                  <ImageModal
-                    imageUrl="images/photo3.jpg"
-                    altContent="Island Boats"
-                  />
-                </div>
-              </ContainerContent>
-            </ProjectContainer>
             <ProjectContainer projectTitle="Journal Articles">
               <div>
                 <JournalArticle
@@ -173,6 +152,27 @@ const Projects = () => {
                   keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
               </div>
+            </ProjectContainer>
+            <ProjectContainer projectTitle="Photography">
+              <ContainerContent>
+                <div
+                  id="photo-gallery"
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
+                >
+                  <ImageModal
+                    imageUrl="images/photo1.jpg"
+                    altContent="Horizon Zero Dawn"
+                  />
+                  <ImageModal
+                    imageUrl="images/photo2.jpg"
+                    altContent="Hirono Tree"
+                  />
+                  <ImageModal
+                    imageUrl="images/photo3.jpg"
+                    altContent="Island Boats"
+                  />
+                </div>
+              </ContainerContent>
             </ProjectContainer>
             <ProjectContainer projectTitle="Digital Art">
               <ContainerContent>
