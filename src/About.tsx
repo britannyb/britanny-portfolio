@@ -98,7 +98,7 @@ const About = () => {
                         width="40"
                         className="mr-2 hover:scale-125"
                       />
-                      ResearchGate: Britanny B.
+                      ResearchGate: Britanny
                     </a>
                   </div>
                   <div>
