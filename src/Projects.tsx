@@ -120,7 +120,7 @@ const Projects = () => {
               <div>
                 <JournalArticle
                   title="MotivEat: A Web-Based Meal Planning Application with Ingredient Recognition for Personalized Nutritional Guidance"
-                  url="https://journals.telkomuniversity.ac.id/ijait/article/view/8134"
+                  url="https://www.researchgate.net/publication/400099796_MotivEat_A_Web-Based_Meal_Planning_Application_with_Ingredient_Recognition_for_Personalized_Nutritional_Guidance"
                   date="01/27/2026"
                   journal="International Journal of Applied Information Technology (IJAIT)"
                   keywords={[
@@ -133,7 +133,7 @@ const Projects = () => {
                 />
                 <JournalArticle
                   title="Crop Suitability Recommendation Based on Soil Parameters & Environmental Factors with Gradient Boosting Trees & Random Forest Algorithm"
-                  url="https://atiftap.org/s/JGB-19315.pdf"
+                  url="https://www.researchgate.net/publication/400572740_Crop_Suitability_Recommendation_Based_on_Soil_Parameters_and_Environmental_Factors_with_Gradient_Boosting_Trees_and_Random_Forest_Algorithm"
                   date="11/30/2025"
                   journal="Journal of Global Business"
                   keywords={[
@@ -146,7 +146,7 @@ const Projects = () => {
                 <JournalArticle
                   title="An Overview of the Networking Issues of Cloud Gaming: A Literature
               Review"
-                  url="https://doi.org/10.35970/jinita.v4i2.1581"
+                  url="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
                   date="12/30/2022"
                   journal="Journal of Innovation Information Technology and Application (JINITA)"
                   keywords={["cloud gaming", "wireless networks", "networks"]}
