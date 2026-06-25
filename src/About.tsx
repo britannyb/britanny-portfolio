@@ -161,12 +161,12 @@ const About = () => {
                 <div>
                   <p>content icons: </p>
                   <a
-                    href="https://www.iconfinder.com/iconsets/line-basic-ecommerce"
+                    href="https://www.magnific.com/author/nikita-golubev/icons"
                     target="_blank"
                     className="text-white break-words hover:text-pink"
                   >
                     <h4 className="text-sm md:text-md">
-                      Nikita @ Iconfinder
+                      Nikita @ Magnific
                       <StyledPointer />
                     </h4>
                   </a>
