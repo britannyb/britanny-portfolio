@@ -116,44 +116,23 @@ const Projects = () => {
         </Container>
         <div className="mt-20">
           <Container title="MISC.">
-            <ProjectContainer projectTitle="Digital Art">
+            <ProjectContainer projectTitle="Photography">
               <ContainerContent>
                 <div
-                  id="drawing-gallery"
-                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
-                >
-                  <DrawingModal
-                    imageUrl="images/drawing1.jpg"
-                    altContent="Dogs art"
-                  />
-                  <DrawingModal
-                    imageUrl="images/drawing2.jpg"
-                    altContent="Cyberpunk Edgerunners stickers art"
-                  />
-                  <DrawingModal
-                    imageUrl="images/drawing3.jpg"
-                    altContent="Fallout fan art"
-                  />
-                </div>
-              </ContainerContent>
-            </ProjectContainer>
-            <ProjectContainer projectTitle="Toy Photography">
-              <ContainerContent>
-                <div
-                  id="toy-gallery"
+                  id="photo-gallery"
                   className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 rounded-images text-xsm lg:text-sm pb-4"
                 >
                   <ImageModal
-                    imageUrl="images/toy1.jpg"
-                    altContent="J. Silverhand"
+                    imageUrl="images/photo1.jpg"
+                    altContent="Horizon Zero Dawn"
                   />
                   <ImageModal
-                    imageUrl="images/toy2.jpg"
-                    altContent="M. Nakano"
+                    imageUrl="images/photo2.jpg"
+                    altContent="Hirono Tree"
                   />
                   <ImageModal
-                    imageUrl="images/toy3.jpg"
-                    altContent="Wong & Wick"
+                    imageUrl="images/photo3.jpg"
+                    altContent="Island Boats"
                   />
                 </div>
               </ContainerContent>
@@ -194,6 +173,27 @@ const Projects = () => {
                   keywords={["cloud gaming", "wireless networks", "networks"]}
                 />
               </div>
+            </ProjectContainer>
+            <ProjectContainer projectTitle="Digital Art">
+              <ContainerContent>
+                <div
+                  id="drawing-gallery"
+                  className="lg:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 items-center centered-image pb-4"
+                >
+                  <DrawingModal
+                    imageUrl="images/drawing1.jpg"
+                    altContent="Dogs art"
+                  />
+                  <DrawingModal
+                    imageUrl="images/drawing2.jpg"
+                    altContent="Cyberpunk Edgerunners stickers art"
+                  />
+                  <DrawingModal
+                    imageUrl="images/drawing3.jpg"
+                    altContent="Fallout fan art"
+                  />
+                </div>
+              </ContainerContent>
             </ProjectContainer>
           </Container>
         </div>

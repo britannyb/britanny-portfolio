@@ -243,11 +243,11 @@ h4 {
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
-#toy-gallery div:nth-of-type(even) {
+#photo-gallery div:nth-of-type(even) {
   transform: rotate(8deg);
 }
 
-#toy-gallery div:nth-of-type(odd) {
+#photo-gallery div:nth-of-type(odd) {
   transform: rotate(-4deg);
 }
 
@@ -259,8 +259,8 @@ h4 {
   transform: rotate(-4deg);
 }
 
-#toy-gallery div:nth-of-type(odd):hover,
-#toy-gallery div:nth-of-type(even):hover,
+#photo-gallery div:nth-of-type(odd):hover,
+#photo-gallery div:nth-of-type(even):hover,
 #drawing-gallery div:nth-of-type(odd):hover,
 #drawing-gallery div:nth-of-type(even):hover {
   transform: none;
@@ -305,49 +305,57 @@ h4 {
 }
 
 .welcome-bg {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/homeTopBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .skills-bg {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/skillsBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .projects-bg {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/images/projectsBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .about-bg {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/aboutBg.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .dark .dark\:welcome-bg-dark {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/homeTopBgDark.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .dark .dark\:skills-bg-dark {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/skillsBgDark.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .dark .dark\:projects-bg-dark {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("/images/projectsBgDark.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .dark .dark\:about-bg-dark {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/images/aboutBgDark.jpg") no-repeat center center;
   background-size: cover;
 }
